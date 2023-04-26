@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.OleDb;
 using System.Diagnostics.Eventing.Reader;
 
 namespace IUTSMS_MAIN_
@@ -121,6 +120,10 @@ namespace IUTSMS_MAIN_
 
                     cmd.ExecuteNonQuery();
                     conn.Close();
+
+                    Form1 f1 = new Form1();
+
+                    f1.fill_regst_list();
 
                     MessageBox.Show("You've Registered in the System Successfully!");
 

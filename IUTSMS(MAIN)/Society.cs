@@ -19,12 +19,13 @@ namespace IUTSMS_MAIN_
     {
         public static List<cs_student> arr_cs_students = new List<cs_student>();//aggregation
 
-        OleDbConnection conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source = dbst.accdb");
-
-        OleDbCommand cmd = new OleDbCommand();
+       
 
         public void fill_cs_arr()
         {
+            OleDbConnection conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source = dbst.accdb");
+
+            OleDbCommand cmd = new OleDbCommand();
             arr_cs_students.Clear();
             //New comment
 
@@ -67,15 +68,17 @@ namespace IUTSMS_MAIN_
 
 
 
-        OleDbConnection conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source = dbst.accdb");
 
-
-        OleDbCommand cmd = new OleDbCommand();
 
 
         public void fill_ds_arr()
         {
             arr_ds_students.Clear();
+
+            OleDbConnection conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source = dbst.accdb");
+
+
+            OleDbCommand cmd = new OleDbCommand();
 
 
 
@@ -126,16 +129,18 @@ namespace IUTSMS_MAIN_
 
 
 
-        OleDbConnection conn = new OleDbConnection("\"Provider=Microsoft.ACE.OleDb.16.0; Data Source = dbst.accdb\"");
-
-
-        OleDbCommand cmd=new OleDbCommand();
+       
 
 
 
         public void fill_ps_arr()
         {
             arr_ps_students.Clear();
+
+            OleDbConnection conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source = dbst.accdb");
+
+
+            OleDbCommand cmd = new OleDbCommand();
 
 
 
@@ -188,16 +193,18 @@ namespace IUTSMS_MAIN_
 
 
 
-        OleDbConnection conn = new OleDbConnection("\"Provider=Microsoft.ACE.OleDb.16.0; Data Source = dbst.accdb\"");
-
-
-        OleDbCommand cmd = new OleDbCommand();
-
+       
 
 
         public void fill_siks_arr()
         {
             arr_siks_students.Clear();
+
+            OleDbConnection conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source = dbst.accdb");
+
+
+            OleDbCommand cmd = new OleDbCommand();
+
 
 
 

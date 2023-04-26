@@ -185,38 +185,126 @@ namespace IUTSMS_MAIN_
 
         private void iutds_button_Click(object sender, EventArgs e)
         {
+
+            bool flag = false;
+
+            for(int i=0;i<IUTDS.arr_ds_students.Count;i++)
+            {
+                if (IUTDS.arr_ds_students[i].id==Convert.ToInt32(st_login_Form.id))
+                {
+
+                    flag= true; 
+                    
+                    break;
+
+
+                }
+            }
             _obj = this;
-            UC_reg_ds uc_reg_ds = new UC_reg_ds();
 
-            uc_reg_ds.Dock = DockStyle.Fill;
+            if (!flag)
+            {
+                UC_reg_ds uc_reg_ds = new UC_reg_ds();
 
-            container_panel.Controls.Add(uc_reg_ds);
+                uc_reg_ds.Dock = DockStyle.Fill;
 
-            uc_reg_ds.BringToFront();
+                container_panel.Controls.Add(uc_reg_ds);
+
+                uc_reg_ds.BringToFront();
+            }
+
+            else
+            {
+                UC_iutds_st_page uc_st_ds = new UC_iutds_st_page();
+
+                uc_st_ds.Dock = DockStyle.Fill;
+
+                container_panel.Controls.Add(uc_st_ds);
+
+                uc_st_ds.BringToFront();
+            }
         }
 
         private void iutps_button_Click(object sender, EventArgs e)
         {
+
+
+            bool flag = false;
+
+            for (int i = 0; i < IUTPS.arr_ps_students.Count; i++)
+            {
+                if (IUTPS.arr_ps_students[i].id == Convert.ToInt32(st_login_Form.id))
+                {
+
+                    flag = true;
+
+                    break;
+
+
+                }
+            }
             _obj = this;
-            UC_reg_ps uc_reg_ps = new UC_reg_ps();
+            if (!flag)
+            {
+                UC_reg_ps uc_reg_ps = new UC_reg_ps();
 
-            uc_reg_ps.Dock = DockStyle.Fill;
+                uc_reg_ps.Dock = DockStyle.Fill;
 
-            container_panel.Controls.Add(uc_reg_ps);
+                container_panel.Controls.Add(uc_reg_ps);
 
-            uc_reg_ps.BringToFront();
+                uc_reg_ps.BringToFront();
+            }
+            else
+            {
+                UC_iutps_st_page uc_st_ps = new UC_iutps_st_page();
+
+                uc_st_ps.Dock = DockStyle.Fill;
+
+                container_panel.Controls.Add(uc_st_ps);
+
+                uc_st_ps.BringToFront();
+            }
         }
 
         private void iutsiks_Button_Click(object sender, EventArgs e)
         {
+            bool flag = false;
+
+            for (int i = 0; i < IUTSIKS.arr_siks_students.Count; i++)
+            {
+                if (IUTSIKS.arr_siks_students[i].id == Convert.ToInt32(st_login_Form.id))
+                {
+
+                    flag = true;
+
+                    break;
+
+
+                }
+            }
+
             _obj = this;
-            UC_reg_siks uc_reg_siks = new UC_reg_siks();
+            if (!flag)
+            {
+                UC_reg_siks uc_reg_siks = new UC_reg_siks();
 
-            uc_reg_siks.Dock = DockStyle.Fill;
+                uc_reg_siks.Dock = DockStyle.Fill;
 
-            container_panel.Controls.Add(uc_reg_siks);
+                container_panel.Controls.Add(uc_reg_siks);
 
-            uc_reg_siks.BringToFront();
+                uc_reg_siks.BringToFront();
+            }
+
+            else
+            {
+                UC_iutsiks_st_page uc_st_siks = new UC_iutsiks_st_page();
+
+                uc_st_siks.Dock = DockStyle.Fill;
+
+                container_panel.Controls.Add(uc_st_siks);
+
+                uc_st_siks.BringToFront();
+            }
         }
 
         // to traverse through user controlss<

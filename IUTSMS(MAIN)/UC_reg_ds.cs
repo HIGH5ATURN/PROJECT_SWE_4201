@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,49 @@ namespace IUTSMS_MAIN_
         public UC_reg_ds()
         {
             InitializeComponent();
+        }
+
+
+
+        OleDbConnection conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source = dbst.accdb");
+
+        OleDbCommand cmd = new OleDbCommand();
+
+        // OleDbDataAdapter da = new OleDbDataAdapter();
+
+        void add_in_ds_table(string nme, string idd, string dpp)
+        {
+            try
+            {
+                conn.Close();
+
+                conn.Open();
+
+
+                string t = "INSERT INTO ds_table (naam, st_id ,dept) VALUES" + "(@name,@id,@dp)";
+
+                cmd = new OleDbCommand(t, conn);
+                cmd.Parameters.AddWithValue("@name", nme);
+                cmd.Parameters.AddWithValue("@id", Convert.ToInt32(idd));
+                cmd.Parameters.AddWithValue("@dp", dpp);
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+
+                IUTCS cs = new IUTCS();
+
+                cs.fill_cs_arr();
+
+
+                //MessageBox.Show("Joined in IUTCS_table");
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Join_Button_Click(object sender, EventArgs e)
@@ -41,6 +85,7 @@ namespace IUTSMS_MAIN_
 
         private void UC_reg_ds_Load(object sender, EventArgs e)
         {
+
 
         }
     }

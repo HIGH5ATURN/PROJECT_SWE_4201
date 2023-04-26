@@ -37,19 +37,37 @@ namespace IUTSMS_MAIN_
         {
 
             WinAPI.AnimateWindow(this.Handle, 500, WinAPI.BLEND);
-            arr_students.Clear();
+            
             fill_regst_list();
+
+
+            // Showing association:
 
             IUTCS cs= new IUTCS();
             
             cs.fill_cs_arr();
 
+            IUTPS ps = new IUTPS();
+
+            ps.fill_ps_arr();
+
+            IUTDS ds = new IUTDS();
+
+            ds.fill_ds_arr();
+
+            IUTSIKS siks = new IUTSIKS();
+
+            siks.fill_siks_arr();
 
         }
 
 
-        void fill_regst_list()
+        public void fill_regst_list()
         {
+
+            conn.Close();
+
+            arr_students.Clear();
             try
             {
 
