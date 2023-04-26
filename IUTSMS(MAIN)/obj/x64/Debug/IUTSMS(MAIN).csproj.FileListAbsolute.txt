@@ -139,3 +139,39 @@ D:\IUTSMS Main New\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS(MAIN).cspr
 D:\IUTSMS Main New\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS(MAIN).csproj.CopyComplete
 D:\IUTSMS Main New\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS(MAIN).exe
 D:\IUTSMS Main New\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS(MAIN).pdb
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\bin\x64\Debug\IUTSMS(MAIN).exe.config
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\bin\x64\Debug\IUTSMS(MAIN).exe
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\bin\x64\Debug\IUTSMS(MAIN).pdb
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\bin\x64\Debug\Guna.UI.dll
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS(MAIN).csproj.AssemblyReference.cache
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS(MAIN).csproj.SuggestedBindingRedirects.cache
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.Admin_Form.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.CS_admin.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.DS_admin.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.Form1.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.Loading_Form.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.Loading_Form2.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.login_AF__user_control.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.Properties.Resources.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.PS_admin.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.SIKS_admin.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.society_info_Form.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.stdnt_club_dash.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.Student_Form.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.Student_user_control.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.st_CLUB.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.st_Dashboard.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.st_login_Form.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.UC_iutcs_st_page.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.UC_iutds_st_page.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.UC_iutps_st_page.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.UC_iutsiks_st_page.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.UC_reg_cs.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.UC_reg_ds.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.UC_reg_ps.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS_MAIN_.UC_reg_siks.resources
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS(MAIN).csproj.GenerateResource.cache
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS(MAIN).csproj.CoreCompileInputs.cache
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS(MAIN).csproj.CopyComplete
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS(MAIN).exe
+D:\GIT\Swe_project\PROJECT_SWE_4201\IUTSMS(MAIN)\obj\x64\Debug\IUTSMS(MAIN).pdb

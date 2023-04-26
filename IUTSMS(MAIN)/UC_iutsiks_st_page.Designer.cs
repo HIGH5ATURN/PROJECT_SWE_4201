@@ -31,6 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_iutsiks_st_page));
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gunaCirclePictureBox3 = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.btn_send_msg = new Guna.UI.WinForms.GunaGradientTileButton();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txt_msg = new System.Windows.Forms.TextBox();
+            this.dgw_chat_CS = new System.Windows.Forms.DataGridView();
+            this.label16 = new System.Windows.Forms.Label();
             this.dgwNotices = new System.Windows.Forms.DataGridView();
             this.fb_button = new Guna.UI.WinForms.GunaGradientTileButton();
             this.label9 = new System.Windows.Forms.Label();
@@ -65,19 +71,13 @@
             this.zakah_bank_balance_textbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.gunaCirclePictureBox2 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.btn_send_msg = new Guna.UI.WinForms.GunaGradientTileButton();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txt_msg = new System.Windows.Forms.TextBox();
-            this.dgw_chat_CS = new System.Windows.Forms.DataGridView();
-            this.label16 = new System.Windows.Forms.Label();
-            this.gunaCirclePictureBox3 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_chat_CS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwNotices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgw_chat_CS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -122,6 +122,95 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1151, 671);
             this.panel1.TabIndex = 27;
+            // 
+            // gunaCirclePictureBox3
+            // 
+            this.gunaCirclePictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCirclePictureBox3.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaCirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox3.Image")));
+            this.gunaCirclePictureBox3.Location = new System.Drawing.Point(652, 638);
+            this.gunaCirclePictureBox3.Name = "gunaCirclePictureBox3";
+            this.gunaCirclePictureBox3.Size = new System.Drawing.Size(300, 300);
+            this.gunaCirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox3.TabIndex = 113;
+            this.gunaCirclePictureBox3.TabStop = false;
+            this.gunaCirclePictureBox3.UseTransfarantBackground = false;
+            // 
+            // btn_send_msg
+            // 
+            this.btn_send_msg.Animated = true;
+            this.btn_send_msg.AnimationHoverSpeed = 0.07F;
+            this.btn_send_msg.AnimationSpeed = 0.03F;
+            this.btn_send_msg.BackColor = System.Drawing.Color.Transparent;
+            this.btn_send_msg.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.btn_send_msg.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.btn_send_msg.BorderColor = System.Drawing.Color.Black;
+            this.btn_send_msg.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_send_msg.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_send_msg.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_send_msg.ForeColor = System.Drawing.Color.White;
+            this.btn_send_msg.Image = null;
+            this.btn_send_msg.ImageSize = new System.Drawing.Size(52, 52);
+            this.btn_send_msg.Location = new System.Drawing.Point(666, 1469);
+            this.btn_send_msg.Name = "btn_send_msg";
+            this.btn_send_msg.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.btn_send_msg.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.btn_send_msg.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_send_msg.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_send_msg.OnHoverImage = null;
+            this.btn_send_msg.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_send_msg.Size = new System.Drawing.Size(235, 39);
+            this.btn_send_msg.TabIndex = 112;
+            this.btn_send_msg.Text = "Send Message";
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
+            this.label13.Location = new System.Drawing.Point(584, 1083);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(387, 30);
+            this.label13.TabIndex = 111;
+            this.label13.Text = "Write your message to Community";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txt_msg
+            // 
+            this.txt_msg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_msg.Location = new System.Drawing.Point(602, 1116);
+            this.txt_msg.Multiline = true;
+            this.txt_msg.Name = "txt_msg";
+            this.txt_msg.Size = new System.Drawing.Size(350, 338);
+            this.txt_msg.TabIndex = 110;
+            // 
+            // dgw_chat_CS
+            // 
+            this.dgw_chat_CS.AllowUserToAddRows = false;
+            this.dgw_chat_CS.AllowUserToDeleteRows = false;
+            this.dgw_chat_CS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgw_chat_CS.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgw_chat_CS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgw_chat_CS.Location = new System.Drawing.Point(12, 1116);
+            this.dgw_chat_CS.Name = "dgw_chat_CS";
+            this.dgw_chat_CS.ReadOnly = true;
+            this.dgw_chat_CS.RowHeadersWidth = 51;
+            this.dgw_chat_CS.RowTemplate.Height = 24;
+            this.dgw_chat_CS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgw_chat_CS.Size = new System.Drawing.Size(556, 338);
+            this.dgw_chat_CS.TabIndex = 109;
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
+            this.label16.Location = new System.Drawing.Point(6, 1083);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(203, 30);
+            this.label16.TabIndex = 108;
+            this.label16.Text = "Discussion Forum";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dgwNotices
             // 
@@ -184,7 +273,7 @@
             this.gunaCirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(597, 1741);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(597, 1985);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
             this.gunaCirclePictureBox1.Size = new System.Drawing.Size(50, 50);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -629,95 +718,6 @@
             this.gunaCirclePictureBox2.TabStop = false;
             this.gunaCirclePictureBox2.UseTransfarantBackground = false;
             // 
-            // btn_send_msg
-            // 
-            this.btn_send_msg.Animated = true;
-            this.btn_send_msg.AnimationHoverSpeed = 0.07F;
-            this.btn_send_msg.AnimationSpeed = 0.03F;
-            this.btn_send_msg.BackColor = System.Drawing.Color.Transparent;
-            this.btn_send_msg.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_send_msg.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_send_msg.BorderColor = System.Drawing.Color.Black;
-            this.btn_send_msg.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_send_msg.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_send_msg.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_send_msg.ForeColor = System.Drawing.Color.White;
-            this.btn_send_msg.Image = null;
-            this.btn_send_msg.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_send_msg.Location = new System.Drawing.Point(666, 1469);
-            this.btn_send_msg.Name = "btn_send_msg";
-            this.btn_send_msg.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.btn_send_msg.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.btn_send_msg.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_send_msg.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_send_msg.OnHoverImage = null;
-            this.btn_send_msg.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_send_msg.Size = new System.Drawing.Size(235, 39);
-            this.btn_send_msg.TabIndex = 112;
-            this.btn_send_msg.Text = "Send Message";
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label13.Location = new System.Drawing.Point(584, 1083);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(387, 30);
-            this.label13.TabIndex = 111;
-            this.label13.Text = "Write your message to Community";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txt_msg
-            // 
-            this.txt_msg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_msg.Location = new System.Drawing.Point(602, 1116);
-            this.txt_msg.Multiline = true;
-            this.txt_msg.Name = "txt_msg";
-            this.txt_msg.Size = new System.Drawing.Size(350, 338);
-            this.txt_msg.TabIndex = 110;
-            // 
-            // dgw_chat_CS
-            // 
-            this.dgw_chat_CS.AllowUserToAddRows = false;
-            this.dgw_chat_CS.AllowUserToDeleteRows = false;
-            this.dgw_chat_CS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgw_chat_CS.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgw_chat_CS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgw_chat_CS.Location = new System.Drawing.Point(12, 1116);
-            this.dgw_chat_CS.Name = "dgw_chat_CS";
-            this.dgw_chat_CS.ReadOnly = true;
-            this.dgw_chat_CS.RowHeadersWidth = 51;
-            this.dgw_chat_CS.RowTemplate.Height = 24;
-            this.dgw_chat_CS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw_chat_CS.Size = new System.Drawing.Size(556, 338);
-            this.dgw_chat_CS.TabIndex = 109;
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label16.Location = new System.Drawing.Point(6, 1083);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(203, 30);
-            this.label16.TabIndex = 108;
-            this.label16.Text = "Discussion Forum";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // gunaCirclePictureBox3
-            // 
-            this.gunaCirclePictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCirclePictureBox3.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaCirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox3.Image")));
-            this.gunaCirclePictureBox3.Location = new System.Drawing.Point(652, 638);
-            this.gunaCirclePictureBox3.Name = "gunaCirclePictureBox3";
-            this.gunaCirclePictureBox3.Size = new System.Drawing.Size(300, 300);
-            this.gunaCirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox3.TabIndex = 113;
-            this.gunaCirclePictureBox3.TabStop = false;
-            this.gunaCirclePictureBox3.UseTransfarantBackground = false;
-            // 
             // UC_iutsiks_st_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -731,13 +731,13 @@
             this.Load += new System.EventHandler(this.UC_iutsiks_st_page_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_chat_CS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwNotices)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgw_chat_CS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
