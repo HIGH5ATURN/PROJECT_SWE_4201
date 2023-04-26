@@ -25,11 +25,9 @@ namespace IUTSMS_MAIN_
 
         public void fill_cs_arr()
         {
-<<<<<<< HEAD
-        
-=======
             arr_cs_students.Clear();
->>>>>>> 0532379416529e4cb5eef67097e26f8e699d9675
+            //New comment
+
             try
             {
 
