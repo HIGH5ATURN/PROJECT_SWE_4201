@@ -531,7 +531,6 @@
             this.Controls.Add(this.lbl_dept);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.lbl_id);
-            this.Enabled = false;
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "st_Dashboard";
             this.Size = new System.Drawing.Size(1220, 778);

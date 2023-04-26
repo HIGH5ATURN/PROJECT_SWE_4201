@@ -38,17 +38,23 @@ namespace IUTSMS_MAIN_
                 string t = "INSERT INTO ds_table (naam, st_id ,dept) VALUES" + "(@name,@id,@dp)";
 
                 cmd = new OleDbCommand(t, conn);
+
                 cmd.Parameters.AddWithValue("@name", nme);
+
                 cmd.Parameters.AddWithValue("@id", Convert.ToInt32(idd));
+
                 cmd.Parameters.AddWithValue("@dp", dpp);
 
+
+
                 cmd.ExecuteNonQuery();
+
                 conn.Close();
 
 
-                IUTCS cs = new IUTCS();
+                IUTDS ds = new IUTDS();
 
-                cs.fill_cs_arr();
+                ds.fill_ds_arr();
 
 
                 //MessageBox.Show("Joined in IUTCS_table");
@@ -63,6 +69,32 @@ namespace IUTSMS_MAIN_
 
         private void Join_Button_Click(object sender, EventArgs e)
         {
+            try
+            {
+                conn.Open();
+
+
+                string t = "Select * from st_info where st_id=" + st_login_Form.id + "";
+
+                cmd = new OleDbCommand(t, conn);
+                OleDbDataReader dr;
+
+                dr = cmd.ExecuteReader();
+
+
+                if (dr.Read())
+                {
+                    add_in_ds_table(dr["naam"].ToString(), dr["st_id"].ToString(), dr["dept"].ToString());
+                }
+
+                conn.Close();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             timer1.Start();
         }
 
