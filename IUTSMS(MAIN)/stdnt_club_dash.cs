@@ -28,11 +28,65 @@ namespace IUTSMS_MAIN_
             new st_login_Form().Show();
             
         }
+        void reset_btn_color()
+        {
+            //dashboard button
+            
+            gunaGradientTileButton5.BaseColor1 = Color.FromArgb(0, 52, 51);
+          
+            
+            gunaGradientTileButton5.BaseColor2 = Color.FromArgb(0, 75, 73);
 
+
+
+            //Iutcs_button
+
+            gunaGradientTileButton6.BaseColor1 = Color.FromArgb(0, 52, 51);
+            
+            
+            gunaGradientTileButton6.BaseColor2 = Color.FromArgb(0, 75, 73);
+
+
+
+            //iutps_button
+           
+            iutps_button.BaseColor1 = Color.FromArgb(0, 52, 51);
+
+
+            iutps_button.BaseColor2 = Color.FromArgb(0,75,73);
+
+
+
+
+            iutds_button.BaseColor1 = Color.FromArgb(0, 52, 51);
+
+
+            iutds_button.BaseColor2 = Color.FromArgb(0, 75, 73);
+
+
+
+
+            iutsiks_Button.BaseColor1 = Color.FromArgb(0, 52, 51);
+
+
+            iutsiks_Button.BaseColor2 = Color.FromArgb(0, 75, 73);
+
+
+        }
         private void stdnt_club_dash_Load(object sender, EventArgs e)
         {
+            reset_btn_color();
+
             WinAPI.AnimateWindow(this.Handle, 500, WinAPI.BLEND);
+
+
+
         }
+
+
+
+
+
         //to move the form>
         private bool dragg = false;
         private Point StartPoint = new Point(0, 0);
@@ -101,6 +155,20 @@ namespace IUTSMS_MAIN_
 
         private void gunaGradientTileButton5_Click(object sender, EventArgs e)
         {
+
+            reset_btn_color();
+
+            gunaGradientTileButton5.BaseColor1 = Color.FromArgb(0, 75, 73);
+
+
+            gunaGradientTileButton5.BaseColor2 = Color.FromArgb(0, 52, 51);
+
+
+
+            
+
+
+
             _obj = this;
             st_Dashboard uc = new st_Dashboard();
 
@@ -121,6 +189,20 @@ namespace IUTSMS_MAIN_
 
         private void gunaGradientTileButton6_Click(object sender, EventArgs e)
         {
+            reset_btn_color();
+
+
+            
+          gunaGradientTileButton6.BaseColor1 = Color.FromArgb(0, 75, 73);
+
+
+          gunaGradientTileButton6.BaseColor2 = Color.FromArgb(0, 52, 51);
+
+
+
+
+
+
             bool flag = false;
             //first we will check for two viable options, 1) if the stdnt is already a member, or 2) he isnt yet member
            /*
@@ -185,6 +267,14 @@ namespace IUTSMS_MAIN_
 
         private void iutds_button_Click(object sender, EventArgs e)
         {
+            reset_btn_color();
+            
+           iutds_button.BaseColor1 = Color.FromArgb(0, 75, 73);
+
+
+           iutds_button.BaseColor2 = Color.FromArgb(0, 52, 51);
+
+
 
             bool flag = false;
 
@@ -227,6 +317,15 @@ namespace IUTSMS_MAIN_
 
         private void iutps_button_Click(object sender, EventArgs e)
         {
+            reset_btn_color();
+
+            
+           iutps_button.BaseColor1 = Color.FromArgb(0, 75, 73);
+
+
+           iutps_button.BaseColor2 = Color.FromArgb(0, 52, 51);
+
+
 
 
             bool flag = false;
@@ -268,6 +367,19 @@ namespace IUTSMS_MAIN_
 
         private void iutsiks_Button_Click(object sender, EventArgs e)
         {
+            reset_btn_color();
+
+            
+           iutsiks_Button.BaseColor1 = Color.FromArgb(0, 75, 73);
+
+
+           iutsiks_Button.BaseColor2 = Color.FromArgb(0, 52, 51);
+
+
+
+
+
+
             bool flag = false;
 
             for (int i = 0; i < IUTSIKS.arr_siks_students.Count; i++)

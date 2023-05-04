@@ -16,7 +16,7 @@ namespace IUTSMS_MAIN_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Classic_Snake_Game());
+            Application.Run(new Loading_Form2());
         }
     }
 }

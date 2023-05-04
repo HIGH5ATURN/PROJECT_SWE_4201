@@ -81,7 +81,7 @@ namespace IUTSMS_MAIN_
 
         private void Classic_Snake_Game_Load(object sender, EventArgs e)
         {
-
+            WinAPI.AnimateWindow(this.Handle, 500, WinAPI.BLEND);
         }
 
 

@@ -62,6 +62,10 @@
             this.txt_id = new System.Windows.Forms.TextBox();
             this.txt_dept = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.login_pass_textBox = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.login_u_id_textBox = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // lbl_dept
@@ -493,10 +497,51 @@
             this.label4.Text = "Note: The order is Descending";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // login_pass_textBox
+            // 
+            this.login_pass_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.login_pass_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.login_pass_textBox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_pass_textBox.Location = new System.Drawing.Point(54, 561);
+            this.login_pass_textBox.Name = "login_pass_textBox";
+            this.login_pass_textBox.Size = new System.Drawing.Size(373, 31);
+            this.login_pass_textBox.TabIndex = 84;
+            this.login_pass_textBox.UseSystemPasswordChar = true;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.panel3.Location = new System.Drawing.Point(54, 594);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(373, 1);
+            this.panel3.TabIndex = 82;
+            // 
+            // login_u_id_textBox
+            // 
+            this.login_u_id_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.login_u_id_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.login_u_id_textBox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_u_id_textBox.Location = new System.Drawing.Point(57, 453);
+            this.login_u_id_textBox.Name = "login_u_id_textBox";
+            this.login_u_id_textBox.Size = new System.Drawing.Size(373, 31);
+            this.login_u_id_textBox.TabIndex = 83;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.panel2.Location = new System.Drawing.Point(54, 486);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(373, 1);
+            this.panel2.TabIndex = 81;
+            // 
             // st_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.login_pass_textBox);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.login_u_id_textBox);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_dept);
             this.Controls.Add(this.txt_id);
@@ -576,5 +621,9 @@
         private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.TextBox txt_dept;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox login_pass_textBox;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox login_u_id_textBox;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -238,7 +238,7 @@
             this.iutps_button.OnHoverForeColor = System.Drawing.Color.White;
             this.iutps_button.OnHoverImage = null;
             this.iutps_button.OnPressedColor = System.Drawing.Color.Black;
-            this.iutps_button.Size = new System.Drawing.Size(290, 83);
+            this.iutps_button.Size = new System.Drawing.Size(301, 83);
             this.iutps_button.TabIndex = 15;
             this.iutps_button.Text = "IUTPS";
             this.iutps_button.Click += new System.EventHandler(this.iutps_button_Click);

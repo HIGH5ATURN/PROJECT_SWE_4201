@@ -100,7 +100,7 @@ namespace IUTSMS_MAIN_
                 if(dr.Read())
                 {
 
-                    MessageBox.Show($"{dr["java"].ToString()}\t{dr["cp"].ToString()}\t{dr["WebDev"].ToString()}");
+                    //MessageBox.Show($"{dr["java"].ToString()}\t{dr["cp"].ToString()}\t{dr["WebDev"].ToString()}");
                     
                     
                     
@@ -232,6 +232,11 @@ namespace IUTSMS_MAIN_
                 MessageBox.Show(ex.Message);
             }
 
+        }
+
+        private void btn_play_snake_Click(object sender, EventArgs e)
+        {
+            new Classic_Snake_Game().Show();
         }
     }
 }
