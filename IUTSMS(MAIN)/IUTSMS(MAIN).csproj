@@ -77,6 +77,13 @@
     <Compile Include="Admin_Form.Designer.cs">
       <DependentUpon>Admin_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Circle.cs" />
+    <Compile Include="Classic Snake Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classic Snake Game.Designer.cs">
+      <DependentUpon>Classic Snake Game.cs</DependentUpon>
+    </Compile>
     <Compile Include="CS_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,12 +128,14 @@
     <Compile Include="PS_admin.Designer.cs">
       <DependentUpon>PS_admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settings.cs" />
     <Compile Include="SIKS_admin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SIKS_admin.Designer.cs">
       <DependentUpon>SIKS_admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Snake Game.cs" />
     <Compile Include="Society.cs" />
     <Compile Include="society_info_Form.cs">
       <SubType>Form</SubType>
@@ -222,6 +231,9 @@
     <Compile Include="WinAPI.cs" />
     <EmbeddedResource Include="Admin_Form.resx">
       <DependentUpon>Admin_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classic Snake Game.resx">
+      <DependentUpon>Classic Snake Game.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CS_admin.resx">
       <DependentUpon>CS_admin.cs</DependentUpon>
