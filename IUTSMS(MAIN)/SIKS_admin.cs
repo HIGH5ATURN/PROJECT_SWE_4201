@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -52,17 +53,23 @@ namespace IUTSMS_MAIN_
         }
         private void btn_publish_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO siks_notice (notice) VALUES" + "(@ntc)";
+            try
+            {
+                string query = "INSERT INTO siks_notice (notice) VALUES" + "(@ntc)";
 
-            cmd = new OleDbCommand(query, conn);
-            cmd.Parameters.AddWithValue("@ntc", txt_notice.Text);
+                cmd = new OleDbCommand(query, conn);
+                cmd.Parameters.AddWithValue("@ntc", txt_notice.Text);
 
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Notice published!");
-            GetNotices();
-
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Notice published!");
+                GetNotices();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void dgwNotices_CellEnter(object sender, DataGridViewCellEventArgs e)
@@ -72,15 +79,22 @@ namespace IUTSMS_MAIN_
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            string query = "DELETE FROM siks_notice where EID=@id";
+            try
+            {
+                string query = "DELETE FROM siks_notice where EID=@id";
 
-            cmd = new OleDbCommand(query, conn);
-            cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_notice_no.Text));
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Notice Deleted!");
-            GetNotices();
+                cmd = new OleDbCommand(query, conn);
+                cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_notice_no.Text));
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Notice Deleted!");
+                GetNotices();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void admin_back_Button_Click(object sender, EventArgs e)
