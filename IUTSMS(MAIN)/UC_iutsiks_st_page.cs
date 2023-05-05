@@ -117,9 +117,84 @@ namespace IUTSMS_MAIN_
             conn.Close();
         }
 
+        OleDbDataAdapter adapter1 = new OleDbDataAdapter();
+        DataTable dt1;
+        void getDiscuss()
+        {
+            conn.Close();
+            try
+            {
+                conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
+
+                dt1 = new DataTable();
+
+                adapter1 = new OleDbDataAdapter("SELECT * FROM siks_discuss", conn);
+
+                conn.Open();
+
+                adapter1.Fill(dt1);
+
+                dgw_chat_SIKS.DataSource = dt1;
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void UC_iutsiks_st_page_Load(object sender, EventArgs e)
         {
             GetNotices();
+            getDiscuss();
+        }
+
+        private void dgw_chat_CS_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_send_msg_Click(object sender, EventArgs e)
+        {
+            string f = "";
+            for (int i = 0; i < IUTSIKS.arr_siks_students.Count; i++)
+            {
+                if (Convert.ToInt32(st_login_Form.id) == IUTSIKS.arr_siks_students[i].id)
+                {
+                    f = IUTSIKS.arr_siks_students[i].name;
+                    break;
+                }
+
+            }
+            try
+            {
+
+
+                conn.Open();
+
+
+                string t = "INSERT INTO siks_discuss  (naam, message) VALUES" + "(@name,@msg)";
+
+                cmd = new OleDbCommand(t, conn);
+
+                cmd.Parameters.AddWithValue("@name", f);
+
+                cmd.Parameters.AddWithValue("@msg", txt_msg.Text);
+
+                cmd.ExecuteNonQuery();
+
+                conn.Close();
+
+                getDiscuss();
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

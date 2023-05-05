@@ -21,6 +21,7 @@ namespace IUTSMS_MAIN_
         private void CS_admin_Load(object sender, EventArgs e)
         {
             WinAPI.AnimateWindow(this.Handle, 500, WinAPI.BLEND);
+            GetNotices();
         }
 
 

@@ -46,14 +46,64 @@ namespace IUTSMS_MAIN_
 
                 if (dr.Read())
                 {
-                   // MessageBox.Show(st_login_Form.id);
+                    // MessageBox.Show(st_login_Form.id);
 
-                    txt_name.Text =  dr["naam"].ToString();
+                    txt_name.Text = dr["naam"].ToString();
 
-                   txt_id.Text = st_login_Form.id;
+                    txt_id.Text = st_login_Form.id;
 
                     txt_dept.Text = dr["dept"].ToString();
                 }
+
+                //just adding societies in the list box
+
+
+
+                joind_club_listBox.Items.Clear();
+
+
+                for (int i = 0; i < IUTCS.arr_cs_students.Count; i++)
+                {
+                    if (Convert.ToInt32(st_login_Form.id) == IUTCS.arr_cs_students[i].id)
+                    {
+
+                        joind_club_listBox.Items.Add("IUT Computer Society");
+                        break;
+                    }
+                }
+
+                for (int i = 0; i < IUTDS.arr_ds_students.Count; i++)
+                {
+                    if (Convert.ToInt32(st_login_Form.id) == IUTDS.arr_ds_students[i].id)
+                    {
+
+                        joind_club_listBox.Items.Add("IUT Debating Society");
+                        break;
+                    }
+                }
+                for (int i = 0; i < IUTPS.arr_ps_students.Count; i++)
+                {
+                    if (Convert.ToInt32(st_login_Form.id) == IUTPS.arr_ps_students[i].id)
+                    {
+
+                        joind_club_listBox.Items.Add("IUT Photographic Society");
+                        break;
+                    }
+                }
+                for (int i = 0; i < IUTSIKS.arr_siks_students.Count; i++)
+                {
+                    if (Convert.ToInt32(st_login_Form.id) == IUTSIKS.arr_siks_students[i].id)
+                    {
+
+                        joind_club_listBox.Items.Add("IUT Society For Islamic Knowledge Seekers");
+                        break;
+                    }
+                }
+
+
+
+
+
 
                 conn.Close();
 

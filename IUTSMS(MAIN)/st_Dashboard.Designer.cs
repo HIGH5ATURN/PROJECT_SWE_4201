@@ -116,6 +116,7 @@
             // 
             this.joind_club_listBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.joind_club_listBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.joind_club_listBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
             this.joind_club_listBox.FormattingEnabled = true;
             this.joind_club_listBox.ItemHeight = 28;
             this.joind_club_listBox.Location = new System.Drawing.Point(9, 235);

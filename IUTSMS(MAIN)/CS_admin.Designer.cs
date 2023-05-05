@@ -102,7 +102,7 @@
             this.gunaCirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox2.BaseColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox2.Image")));
-            this.gunaCirclePictureBox2.Location = new System.Drawing.Point(528, 24);
+            this.gunaCirclePictureBox2.Location = new System.Drawing.Point(525, 24);
             this.gunaCirclePictureBox2.Name = "gunaCirclePictureBox2";
             this.gunaCirclePictureBox2.Size = new System.Drawing.Size(44, 46);
             this.gunaCirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -116,7 +116,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Location = new System.Drawing.Point(473, 8);
+            this.label4.Location = new System.Drawing.Point(488, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(612, 69);
             this.label4.TabIndex = 95;
