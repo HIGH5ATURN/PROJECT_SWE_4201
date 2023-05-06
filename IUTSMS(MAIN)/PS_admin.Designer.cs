@@ -42,9 +42,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.admin_back_Button = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.dgw_members = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwNotices)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_members)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaControlBox2
@@ -256,6 +261,10 @@
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.dgw_members);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.gunaCirclePictureBox1);
             this.panel1.Controls.Add(this.gunaCirclePictureBox2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btn_Delete);
@@ -269,6 +278,47 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1499, 831);
             this.panel1.TabIndex = 114;
+            // 
+            // gunaCirclePictureBox1
+            // 
+            this.gunaCirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(767, 1503);
+            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(44, 49);
+            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox1.TabIndex = 113;
+            this.gunaCirclePictureBox1.TabStop = false;
+            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
+            // 
+            // dgw_members
+            // 
+            this.dgw_members.AllowUserToAddRows = false;
+            this.dgw_members.AllowUserToDeleteRows = false;
+            this.dgw_members.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgw_members.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgw_members.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgw_members.Location = new System.Drawing.Point(51, 779);
+            this.dgw_members.Name = "dgw_members";
+            this.dgw_members.ReadOnly = true;
+            this.dgw_members.RowHeadersWidth = 51;
+            this.dgw_members.RowTemplate.Height = 24;
+            this.dgw_members.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgw_members.Size = new System.Drawing.Size(1381, 527);
+            this.dgw_members.TabIndex = 117;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.label3.Location = new System.Drawing.Point(44, 718);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(163, 39);
+            this.label3.TabIndex = 116;
+            this.label3.Text = "Members:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PS_admin
             // 
@@ -287,6 +337,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgwNotices)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_members)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,5 +358,8 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaAdvenceTileButton admin_back_Button;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
+        private System.Windows.Forms.DataGridView dgw_members;
+        private System.Windows.Forms.Label label3;
     }
 }
