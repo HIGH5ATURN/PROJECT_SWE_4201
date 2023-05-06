@@ -22,6 +22,7 @@ namespace IUTSMS_MAIN_
         {
             WinAPI.AnimateWindow(this.Handle, 500, WinAPI.BLEND);
             GetNotices();
+            fillmember();
         }
 
 
@@ -43,31 +44,73 @@ namespace IUTSMS_MAIN_
         DataTable dt;
         void GetNotices()
         {
-            conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
+            try
 
-            
-            
-            dt = new DataTable();
+            {
+                conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
 
-            
-            
-            adapter = new OleDbDataAdapter("SELECT * FROM ds_notice", conn);
 
-            
-            conn.Open();
-           
-            
-            adapter.Fill(dt);
-            
-            
-            dgwNotices.DataSource = dt;
-            
-            
-            conn.Close();
+
+                dt = new DataTable();
+
+
+
+                adapter = new OleDbDataAdapter("SELECT * FROM ds_notice", conn);
+
+
+                conn.Open();
+
+
+                adapter.Fill(dt);
+
+
+                dgwNotices.DataSource = dt;
+
+
+                conn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
-  
+        OleDbDataAdapter adapter1 = new OleDbDataAdapter();
+
+        DataTable dt1;
+
+        void fillmember()
+        {
+            try
+            {
+                conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
+
+
+                dt1 = new DataTable();
+
+
+                adapter1 = new OleDbDataAdapter("SELECT * FROM ds_table", conn);
+
+
+
+                conn.Open();
+
+
+                adapter1.Fill(dt1);
+
+
+                dgw_members.DataSource = dt1;
+
+
+                conn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void admin_back_Button_Click(object sender, EventArgs e)
         {
             this.Hide();
