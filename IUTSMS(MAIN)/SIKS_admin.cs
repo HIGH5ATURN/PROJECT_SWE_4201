@@ -24,6 +24,9 @@ namespace IUTSMS_MAIN_
         {
             WinAPI.AnimateWindow(this.Handle, 500, WinAPI.BLEND);
             GetNotices();
+            
+            
+            fillmember();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -37,18 +40,62 @@ namespace IUTSMS_MAIN_
         OleDbCommand cmd = new OleDbCommand();
 
         OleDbDataAdapter adapter = new OleDbDataAdapter();
+     
         DataTable dt;
+        
         void GetNotices()
+        
         {
+        
             conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
 
             dt = new DataTable();
 
             adapter = new OleDbDataAdapter("SELECT * FROM siks_notice", conn);
 
+           
             conn.Open();
+            
+            
             adapter.Fill(dt);
+            
+            
             dgwNotices.DataSource = dt;
+            
+            
+            conn.Close();
+        
+        
+        }
+
+
+
+
+        OleDbDataAdapter adapter1 = new OleDbDataAdapter();
+      
+        DataTable dt1;
+
+        void fillmember()
+        {
+            conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
+
+            
+            dt1 = new DataTable();
+
+
+            adapter1 = new OleDbDataAdapter("SELECT * FROM siks_table", conn);
+
+          
+            
+            conn.Open();
+            
+            
+            adapter1.Fill(dt1);
+            
+            
+            dgw_members.DataSource = dt1;
+            
+            
             conn.Close();
         }
         private void btn_publish_Click(object sender, EventArgs e)
@@ -58,12 +105,24 @@ namespace IUTSMS_MAIN_
                 string query = "INSERT INTO siks_notice (notice) VALUES" + "(@ntc)";
 
                 cmd = new OleDbCommand(query, conn);
+              
+                
                 cmd.Parameters.AddWithValue("@ntc", txt_notice.Text);
 
+               
+                
                 conn.Open();
+                
+                
                 cmd.ExecuteNonQuery();
+                
+                
                 conn.Close();
+                
+                
                 MessageBox.Show("Notice published!");
+                
+                
                 GetNotices();
             }
             catch(Exception ex)
@@ -81,25 +140,48 @@ namespace IUTSMS_MAIN_
         {
             try
             {
+               
+                
                 string query = "DELETE FROM siks_notice where EID=@id";
 
+
+
+                
+                
                 cmd = new OleDbCommand(query, conn);
+                
+                
                 cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_notice_no.Text));
+                
+                
                 conn.Open();
+                
+                
                 cmd.ExecuteNonQuery();
+                
+                
                 conn.Close();
+                
+                
                 MessageBox.Show("Notice Deleted!");
+                
+                
                 GetNotices();
             }
             catch(Exception ex)
             {
+               
                 MessageBox.Show(ex.Message);
+            
             }
         }
 
         private void admin_back_Button_Click(object sender, EventArgs e)
         {
+          
             this.Hide();
+            
+            
             new Admin_Form().Show();
         }
     }
