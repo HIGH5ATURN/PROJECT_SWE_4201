@@ -45,8 +45,13 @@ namespace IUTSMS_MAIN_
                 string t = "INSERT INTO siks_table (naam, st_id ,dept) VALUES" + "(@name,@id,@dp)";
 
                 cmd = new OleDbCommand(t, conn);
+                
                 cmd.Parameters.AddWithValue("@name", nme);
+           
+                
                 cmd.Parameters.AddWithValue("@id", Convert.ToInt32(idd));
+                
+                
                 cmd.Parameters.AddWithValue("@dp", dpp);
 
                 cmd.ExecuteNonQuery();
@@ -55,7 +60,7 @@ namespace IUTSMS_MAIN_
 
                 IUTSIKS siks = new IUTSIKS();
 
-                siks.fill_siks_arr();
+                siks.fill_arr();
 
 
                 //MessageBox.Show("Joined in IUTCS_table");
@@ -112,12 +117,21 @@ namespace IUTSMS_MAIN_
 
             if (pbar.Value == 100)
             {
+          
                 timer1.Stop();
+                
+                
                 MessageBox.Show("Congrats! You're now a member of IUTPS");
+                
+                
                 UC_iutsiks_st_page uc_st_page = new UC_iutsiks_st_page();
+                
+                
                 uc_st_page.Dock = DockStyle.Fill;
 
+                
                 stdnt_club_dash.Instance.PnlContainer.Controls.Add(uc_st_page);
+
 
                 stdnt_club_dash.Instance.PnlContainer.Controls["UC_iutsiks_st_page"].BringToFront();
             }

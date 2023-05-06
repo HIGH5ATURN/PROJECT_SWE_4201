@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -162,10 +162,11 @@ namespace IUTSMS_MAIN_
              
                 
                 cmd = new OleDbCommand(query, conn);
+
                 
                 
                 cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_notice_no.Text));
-                
+
                 
                 conn.Open();
                 

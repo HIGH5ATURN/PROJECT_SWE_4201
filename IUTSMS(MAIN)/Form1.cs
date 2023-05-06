@@ -45,19 +45,19 @@ namespace IUTSMS_MAIN_
 
             IUTCS cs= new IUTCS();
             
-            cs.fill_cs_arr();
+            cs.fill_arr();
 
             IUTPS ps = new IUTPS();
 
-            ps.fill_ps_arr();
+            ps.fill_arr();
 
             IUTDS ds = new IUTDS();
 
-            ds.fill_ds_arr();
+            ds.fill_arr();
 
             IUTSIKS siks = new IUTSIKS();
 
-            siks.fill_siks_arr();
+            siks.fill_arr();
 
         }
 
