@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(st_Dashboard));
             this.lbl_dept = new System.Windows.Forms.Label();
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_id = new System.Windows.Forms.Label();
@@ -62,10 +63,10 @@
             this.txt_id = new System.Windows.Forms.TextBox();
             this.txt_dept = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.login_pass_textBox = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.login_u_id_textBox = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.link_change_pass = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_dept
@@ -498,51 +499,47 @@
             this.label4.Text = "Note: The order is Descending";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // login_pass_textBox
+            // label5
             // 
-            this.login_pass_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.login_pass_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.login_pass_textBox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_pass_textBox.Location = new System.Drawing.Point(54, 561);
-            this.login_pass_textBox.Name = "login_pass_textBox";
-            this.login_pass_textBox.Size = new System.Drawing.Size(373, 31);
-            this.login_pass_textBox.TabIndex = 84;
-            this.login_pass_textBox.UseSystemPasswordChar = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.label5.Location = new System.Drawing.Point(33, 647);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(351, 33);
+            this.label5.TabIndex = 81;
+            this.label5.Text = "Want to Change your password?";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel3
+            // link_change_pass
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.panel3.Location = new System.Drawing.Point(54, 594);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(373, 1);
-            this.panel3.TabIndex = 82;
+            this.link_change_pass.AutoSize = true;
+            this.link_change_pass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.link_change_pass.Location = new System.Drawing.Point(250, 682);
+            this.link_change_pass.Name = "link_change_pass";
+            this.link_change_pass.Size = new System.Drawing.Size(99, 28);
+            this.link_change_pass.TabIndex = 82;
+            this.link_change_pass.TabStop = true;
+            this.link_change_pass.Text = "Click Here";
+            this.link_change_pass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_change_pass_LinkClicked);
             // 
-            // login_u_id_textBox
+            // pictureBox1
             // 
-            this.login_u_id_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.login_u_id_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.login_u_id_textBox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_u_id_textBox.Location = new System.Drawing.Point(57, 453);
-            this.login_u_id_textBox.Name = "login_u_id_textBox";
-            this.login_u_id_textBox.Size = new System.Drawing.Size(373, 31);
-            this.login_u_id_textBox.TabIndex = 83;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.panel2.Location = new System.Drawing.Point(54, 486);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(373, 1);
-            this.panel2.TabIndex = 81;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(81, 411);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(268, 221);
+            this.pictureBox1.TabIndex = 83;
+            this.pictureBox1.TabStop = false;
             // 
             // st_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.login_pass_textBox);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.login_u_id_textBox);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.link_change_pass);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_dept);
             this.Controls.Add(this.txt_id);
@@ -581,6 +578,7 @@
             this.Name = "st_Dashboard";
             this.Size = new System.Drawing.Size(1220, 778);
             this.Load += new System.EventHandler(this.st_Dashboard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -622,9 +620,8 @@
         private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.TextBox txt_dept;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox login_pass_textBox;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox login_u_id_textBox;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.LinkLabel link_change_pass;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

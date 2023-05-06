@@ -42,8 +42,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaGradientTileButton1 = new Guna.UI.WinForms.GunaGradientTileButton();
-            this.btn_rcs_web = new Guna.UI.WinForms.GunaGradientTileButton();
-            this.btn_rcs_cp = new Guna.UI.WinForms.GunaGradientTileButton();
+            this.btn_rcs_graphic_course = new Guna.UI.WinForms.GunaGradientTileButton();
+            this.btn_rcs_photoshop_course = new Guna.UI.WinForms.GunaGradientTileButton();
             this.btn_course_enroll = new Guna.UI.WinForms.GunaGradientTileButton();
             this.cmb_enroll = new Guna.UI.WinForms.GunaComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -74,8 +74,8 @@
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.gunaCirclePictureBox1);
             this.panel1.Controls.Add(this.gunaGradientTileButton1);
-            this.panel1.Controls.Add(this.btn_rcs_web);
-            this.panel1.Controls.Add(this.btn_rcs_cp);
+            this.panel1.Controls.Add(this.btn_rcs_graphic_course);
+            this.panel1.Controls.Add(this.btn_rcs_photoshop_course);
             this.panel1.Controls.Add(this.btn_course_enroll);
             this.panel1.Controls.Add(this.cmb_enroll);
             this.panel1.Controls.Add(this.label3);
@@ -235,7 +235,7 @@
             this.fb_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
             this.fb_button.Image = ((System.Drawing.Image)(resources.GetObject("fb_button.Image")));
             this.fb_button.ImageSize = new System.Drawing.Size(52, 52);
-            this.fb_button.Location = new System.Drawing.Point(572, 1546);
+            this.fb_button.Location = new System.Drawing.Point(531, 1610);
             this.fb_button.Name = "fb_button";
             this.fb_button.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
             this.fb_button.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
@@ -253,7 +253,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label9.Location = new System.Drawing.Point(505, 1481);
+            this.label9.Location = new System.Drawing.Point(464, 1545);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(206, 30);
             this.label9.TabIndex = 103;
@@ -300,62 +300,65 @@
             this.gunaGradientTileButton1.Size = new System.Drawing.Size(318, 62);
             this.gunaGradientTileButton1.TabIndex = 101;
             this.gunaGradientTileButton1.Text = "Resource for Photography Course";
+            this.gunaGradientTileButton1.Click += new System.EventHandler(this.gunaGradientTileButton1_Click);
             // 
-            // btn_rcs_web
+            // btn_rcs_graphic_course
             // 
-            this.btn_rcs_web.Animated = true;
-            this.btn_rcs_web.AnimationHoverSpeed = 0.07F;
-            this.btn_rcs_web.AnimationSpeed = 0.03F;
-            this.btn_rcs_web.BackColor = System.Drawing.Color.Transparent;
-            this.btn_rcs_web.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_rcs_web.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_rcs_web.BorderColor = System.Drawing.Color.Black;
-            this.btn_rcs_web.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_rcs_web.Enabled = false;
-            this.btn_rcs_web.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_rcs_web.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_rcs_web.ForeColor = System.Drawing.Color.White;
-            this.btn_rcs_web.Image = null;
-            this.btn_rcs_web.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_rcs_web.Location = new System.Drawing.Point(62, 895);
-            this.btn_rcs_web.Name = "btn_rcs_web";
-            this.btn_rcs_web.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.btn_rcs_web.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.btn_rcs_web.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_rcs_web.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_rcs_web.OnHoverImage = null;
-            this.btn_rcs_web.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_rcs_web.Size = new System.Drawing.Size(318, 62);
-            this.btn_rcs_web.TabIndex = 100;
-            this.btn_rcs_web.Text = "Resource for Graphics Designing";
+            this.btn_rcs_graphic_course.Animated = true;
+            this.btn_rcs_graphic_course.AnimationHoverSpeed = 0.07F;
+            this.btn_rcs_graphic_course.AnimationSpeed = 0.03F;
+            this.btn_rcs_graphic_course.BackColor = System.Drawing.Color.Transparent;
+            this.btn_rcs_graphic_course.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.btn_rcs_graphic_course.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.btn_rcs_graphic_course.BorderColor = System.Drawing.Color.Black;
+            this.btn_rcs_graphic_course.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_rcs_graphic_course.Enabled = false;
+            this.btn_rcs_graphic_course.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_rcs_graphic_course.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_rcs_graphic_course.ForeColor = System.Drawing.Color.White;
+            this.btn_rcs_graphic_course.Image = null;
+            this.btn_rcs_graphic_course.ImageSize = new System.Drawing.Size(52, 52);
+            this.btn_rcs_graphic_course.Location = new System.Drawing.Point(62, 895);
+            this.btn_rcs_graphic_course.Name = "btn_rcs_graphic_course";
+            this.btn_rcs_graphic_course.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.btn_rcs_graphic_course.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.btn_rcs_graphic_course.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_rcs_graphic_course.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_rcs_graphic_course.OnHoverImage = null;
+            this.btn_rcs_graphic_course.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_rcs_graphic_course.Size = new System.Drawing.Size(318, 62);
+            this.btn_rcs_graphic_course.TabIndex = 100;
+            this.btn_rcs_graphic_course.Text = "Resource for Graphics Designing";
+            this.btn_rcs_graphic_course.Click += new System.EventHandler(this.btn_rcs_graphic_course_Click);
             // 
-            // btn_rcs_cp
+            // btn_rcs_photoshop_course
             // 
-            this.btn_rcs_cp.Animated = true;
-            this.btn_rcs_cp.AnimationHoverSpeed = 0.07F;
-            this.btn_rcs_cp.AnimationSpeed = 0.03F;
-            this.btn_rcs_cp.BackColor = System.Drawing.Color.Transparent;
-            this.btn_rcs_cp.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_rcs_cp.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_rcs_cp.BorderColor = System.Drawing.Color.Black;
-            this.btn_rcs_cp.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_rcs_cp.Enabled = false;
-            this.btn_rcs_cp.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_rcs_cp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_rcs_cp.ForeColor = System.Drawing.Color.White;
-            this.btn_rcs_cp.Image = null;
-            this.btn_rcs_cp.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_rcs_cp.Location = new System.Drawing.Point(62, 827);
-            this.btn_rcs_cp.Name = "btn_rcs_cp";
-            this.btn_rcs_cp.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.btn_rcs_cp.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.btn_rcs_cp.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_rcs_cp.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_rcs_cp.OnHoverImage = null;
-            this.btn_rcs_cp.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_rcs_cp.Size = new System.Drawing.Size(318, 62);
-            this.btn_rcs_cp.TabIndex = 99;
-            this.btn_rcs_cp.Text = "Resource for Photoshop Course";
+            this.btn_rcs_photoshop_course.Animated = true;
+            this.btn_rcs_photoshop_course.AnimationHoverSpeed = 0.07F;
+            this.btn_rcs_photoshop_course.AnimationSpeed = 0.03F;
+            this.btn_rcs_photoshop_course.BackColor = System.Drawing.Color.Transparent;
+            this.btn_rcs_photoshop_course.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.btn_rcs_photoshop_course.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.btn_rcs_photoshop_course.BorderColor = System.Drawing.Color.Black;
+            this.btn_rcs_photoshop_course.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_rcs_photoshop_course.Enabled = false;
+            this.btn_rcs_photoshop_course.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_rcs_photoshop_course.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_rcs_photoshop_course.ForeColor = System.Drawing.Color.White;
+            this.btn_rcs_photoshop_course.Image = null;
+            this.btn_rcs_photoshop_course.ImageSize = new System.Drawing.Size(52, 52);
+            this.btn_rcs_photoshop_course.Location = new System.Drawing.Point(62, 827);
+            this.btn_rcs_photoshop_course.Name = "btn_rcs_photoshop_course";
+            this.btn_rcs_photoshop_course.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.btn_rcs_photoshop_course.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.btn_rcs_photoshop_course.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_rcs_photoshop_course.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_rcs_photoshop_course.OnHoverImage = null;
+            this.btn_rcs_photoshop_course.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_rcs_photoshop_course.Size = new System.Drawing.Size(318, 62);
+            this.btn_rcs_photoshop_course.TabIndex = 99;
+            this.btn_rcs_photoshop_course.Text = "Resource for Photoshop Course";
+            this.btn_rcs_photoshop_course.Click += new System.EventHandler(this.btn_rcs_photoshop_course_Click);
             // 
             // btn_course_enroll
             // 
@@ -383,6 +386,7 @@
             this.btn_course_enroll.Size = new System.Drawing.Size(235, 39);
             this.btn_course_enroll.TabIndex = 98;
             this.btn_course_enroll.Text = "Enroll";
+            this.btn_course_enroll.Click += new System.EventHandler(this.btn_course_enroll_Click);
             // 
             // cmb_enroll
             // 
@@ -500,8 +504,8 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
         private Guna.UI.WinForms.GunaGradientTileButton gunaGradientTileButton1;
-        private Guna.UI.WinForms.GunaGradientTileButton btn_rcs_web;
-        private Guna.UI.WinForms.GunaGradientTileButton btn_rcs_cp;
+        private Guna.UI.WinForms.GunaGradientTileButton btn_rcs_graphic_course;
+        private Guna.UI.WinForms.GunaGradientTileButton btn_rcs_photoshop_course;
         private Guna.UI.WinForms.GunaGradientTileButton btn_course_enroll;
         private Guna.UI.WinForms.GunaComboBox cmb_enroll;
         private System.Windows.Forms.Label label3;
