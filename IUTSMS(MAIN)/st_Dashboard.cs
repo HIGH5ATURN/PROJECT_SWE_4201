@@ -363,28 +363,77 @@ namespace IUTSMS_MAIN_
         private void Clear_Button_Click(object sender, EventArgs e)
         {
             dict.Clear();
+          
+            
             club_suggest_listBox.Items.Clear();
+            
+            
             game_devlop_checkbox.Checked = false;
+            
+            
             programming_checkbox.Checked= false;
+            
+            
             web_design_checkbox.Checked = false;
+            
+            
             security_checkbox.Checked = false;
+            
+            
             robotics_checkbox.Checked = false;
+            
+            
             public_speaking_checkbox.Checked = false;
+            
+            
             speech_writing_checkBox.Checked = false;
+            
+            
             politics_checkBox.Checked = false;
+            
+            
             negotiation_checkBox.Checked = false;
+            
+            
             checkBox1.Checked = false;
+            
+            
             Reciting_quran_checkbox.Checked = false;
+            
+            
             islamic_discuss_checkBox.Checked = false;
+            
+            
             calligraphy_checkbox.Checked = false;
+            
+            
             memorizing_quran_checkbox.Checked=false;
+            
+            
             islamic_literature_checkbox.Checked = false;
+            
+            
             photgraphy_checkbox.Checked = false;
+            
+            
             travelling_checkbox.Checked = false;
+            
+            
             creative_eye_checkbox.Checked = false;
+            
+            
             nature_checkbox.Checked = false;
+            
+            
             photo_editing_checkbox.Checked = false;
 
+
+
+        }
+
+        private void link_change_pass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new st_change_pass_Form().Show();
         }
 
         private void game_devlop_checkbox_CheckedChanged(object sender, EventArgs e)

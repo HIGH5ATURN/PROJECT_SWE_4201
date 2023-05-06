@@ -162,6 +162,12 @@
     <Compile Include="Student_user_control.Designer.cs">
       <DependentUpon>Student_user_control.cs</DependentUpon>
     </Compile>
+    <Compile Include="st_change_pass_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="st_change_pass_Form.Designer.cs">
+      <DependentUpon>st_change_pass_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="st_CLUB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -279,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Student_user_control.resx">
       <DependentUpon>Student_user_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="st_change_pass_Form.resx">
+      <DependentUpon>st_change_pass_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="st_CLUB.resx">
       <DependentUpon>st_CLUB.cs</DependentUpon>

@@ -139,5 +139,86 @@ namespace IUTSMS_MAIN_
             getDiscuss();
             GetNotices();
         }
+
+        private void btn_course_enroll_Click(object sender, EventArgs e)
+        {
+            string f;
+            if (cmb_enroll.Text == "Photography Course")
+            {
+
+                f = "cam";
+               
+                gunaGradientTileButton1.Enabled = true;
+
+            }
+            else if (cmb_enroll.Text == "Photoshop Course")
+            {
+
+                f = "adobe";
+               
+                
+                btn_rcs_photoshop_course.Enabled = true;
+
+
+            }
+            else
+            {
+               
+                f = "graph";
+               
+                btn_rcs_graphic_course.Enabled = true;
+
+
+
+                
+            }
+            try
+            {
+
+
+                conn.Open();
+
+                string g = "-1";
+                string t = "UPDATE ps_table set " + f + "=" + g + "";
+
+                cmd = new OleDbCommand(t, conn);
+
+                cmd.ExecuteNonQuery();
+
+                conn.Close();
+
+
+                MessageBox.Show("Enrolled into" + cmb_enroll.Text + " !");
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void gunaGradientTileButton1_Click(object sender, EventArgs e)
+        {
+
+
+            System.Diagnostics.Process.Start("https://youtube.com/playlist?list=PL7W5udALs-AlIByQQ8KnleHQdKq_9m0vD");
+        }
+
+        private void btn_rcs_photoshop_course_Click(object sender, EventArgs e)
+        {
+
+
+            System.Diagnostics.Process.Start("https://youtube.com/playlist?list=PLjFxTzTNAMaMsqaenf6iI03ibw2q_7yAQ");
+        }
+
+        private void btn_rcs_graphic_course_Click(object sender, EventArgs e)
+        {
+           
+            
+            System.Diagnostics.Process.Start("https://youtube.com/playlist?list=PLYfCBK8IplO4E2sXtdKMVpKJZRBEoMvpn");
+        }
     }
 }

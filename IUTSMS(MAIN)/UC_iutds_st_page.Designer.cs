@@ -194,7 +194,7 @@
             this.fb_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
             this.fb_button.Image = ((System.Drawing.Image)(resources.GetObject("fb_button.Image")));
             this.fb_button.ImageSize = new System.Drawing.Size(52, 52);
-            this.fb_button.Location = new System.Drawing.Point(570, 1249);
+            this.fb_button.Location = new System.Drawing.Point(543, 1382);
             this.fb_button.Name = "fb_button";
             this.fb_button.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
             this.fb_button.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
@@ -212,7 +212,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label9.Location = new System.Drawing.Point(504, 1185);
+            this.label9.Location = new System.Drawing.Point(477, 1318);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(206, 30);
             this.label9.TabIndex = 98;
