@@ -55,7 +55,7 @@ namespace IUTSMS_MAIN_
 
                 IUTPS ps = new IUTPS();
 
-                ps.fill_ps_arr();
+                ps.fill_arr();
 
 
                 //MessageBox.Show("Joined in IUTCS_table");
@@ -86,6 +86,8 @@ namespace IUTSMS_MAIN_
                 string t = "Select * from st_info where st_id=" + st_login_Form.id + "";
 
                 cmd = new OleDbCommand(t, conn);
+              
+                
                 OleDbDataReader dr;
 
                 dr = cmd.ExecuteReader();
@@ -116,11 +118,23 @@ namespace IUTSMS_MAIN_
             if (pbar.Value == 100)
             {
                 timer1.Stop();
+               
+                
                 MessageBox.Show("Congrats! You're now a member of IUTPS");
+                
+                
                 UC_iutps_st_page uc_st_page = new UC_iutps_st_page();
+                
+                
                 uc_st_page.Dock = DockStyle.Fill;
 
+
+
+                
+                
                 stdnt_club_dash.Instance.PnlContainer.Controls.Add(uc_st_page);
+
+
 
                 stdnt_club_dash.Instance.PnlContainer.Controls["UC_iutps_st_page"].BringToFront();
             }

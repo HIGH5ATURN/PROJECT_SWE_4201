@@ -78,7 +78,7 @@ namespace IUTSMS_MAIN_
 
                 IUTCS cs=new IUTCS();
 
-                cs.fill_cs_arr();
+                cs.fill_arr();
 
 
                 //MessageBox.Show("Joined in IUTCS_table");

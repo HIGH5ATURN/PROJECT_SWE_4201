@@ -54,7 +54,11 @@ namespace IUTSMS_MAIN_
 
                 IUTDS ds = new IUTDS();
 
-                ds.fill_ds_arr();
+               
+                
+                ds.fill_arr();
+
+
 
 
                 //MessageBox.Show("Joined in IUTCS_table");
@@ -63,7 +67,11 @@ namespace IUTSMS_MAIN_
             }
             catch (Exception ex)
             {
+              
+                
                 MessageBox.Show(ex.Message);
+            
+            
             }
         }
 
@@ -76,7 +84,11 @@ namespace IUTSMS_MAIN_
 
                 string t = "Select * from st_info where st_id=" + st_login_Form.id + "";
 
+              
+                
                 cmd = new OleDbCommand(t, conn);
+                
+                
                 OleDbDataReader dr;
 
                 dr = cmd.ExecuteReader();
@@ -84,7 +96,11 @@ namespace IUTSMS_MAIN_
 
                 if (dr.Read())
                 {
+                
+                    
                     add_in_ds_table(dr["naam"].ToString(), dr["st_id"].ToString(), dr["dept"].ToString());
+               
+                
                 }
 
                 conn.Close();
@@ -105,11 +121,23 @@ namespace IUTSMS_MAIN_
             if(pbar.Value ==100 )
             {
                 timer1.Stop();
+              
+                
                 MessageBox.Show("Congrats! You're now a member of IUTDS");
+                
+                
                 UC_iutds_st_page uc_st_page = new UC_iutds_st_page();
+                
+                
                 uc_st_page.Dock = DockStyle.Fill;
 
+
+
+                
+                
                 stdnt_club_dash.Instance.PnlContainer.Controls.Add(uc_st_page);
+
+
 
                 stdnt_club_dash.Instance.PnlContainer.Controls["UC_iutds_st_page"].BringToFront();
             }

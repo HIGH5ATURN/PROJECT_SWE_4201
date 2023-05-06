@@ -12,6 +12,7 @@ namespace IUTSMS_MAIN_
     public abstract class Society
     {
 
+        public abstract void fill_arr();
 
     }
 
@@ -21,7 +22,7 @@ namespace IUTSMS_MAIN_
 
        
 
-        public void fill_cs_arr()
+        public override void fill_arr()
         {
             OleDbConnection conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source = dbst.accdb");
 
@@ -71,7 +72,7 @@ namespace IUTSMS_MAIN_
 
 
 
-        public void fill_ds_arr()
+        public override void fill_arr()
         {
             arr_ds_students.Clear();
 
@@ -133,7 +134,7 @@ namespace IUTSMS_MAIN_
 
 
 
-        public void fill_ps_arr()
+        public override void fill_arr()
         {
             arr_ps_students.Clear();
 
@@ -196,7 +197,7 @@ namespace IUTSMS_MAIN_
        
 
 
-        public void fill_siks_arr()
+        public override void fill_arr()
         {
             arr_siks_students.Clear();
 

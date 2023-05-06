@@ -80,11 +80,23 @@ namespace IUTSMS_MAIN_
                 string query = "DELETE FROM ps_notice where ID=@id";
 
                 cmd = new OleDbCommand(query, conn);
+            
+                
                 cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_notice_no.Text));
+            
+                
                 conn.Open();
+                
+                
                 cmd.ExecuteNonQuery();
+                
+                
                 conn.Close();
+                
+                
                 MessageBox.Show("Notice Deleted!");
+                
+                
                 GetNotices();
             }
             catch (Exception ex)
