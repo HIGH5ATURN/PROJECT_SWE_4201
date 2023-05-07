@@ -601,15 +601,8 @@ namespace IUTSMS_MAIN_
         {
             siks_theme();
 
-            
-           iutsiks_Button.BaseColor1 = Color.FromArgb(0, 75, 73);
 
-
-           iutsiks_Button.BaseColor2 = Color.FromArgb(0, 52, 51);
-
-
-
-
+           
 
 
             bool flag = false;
