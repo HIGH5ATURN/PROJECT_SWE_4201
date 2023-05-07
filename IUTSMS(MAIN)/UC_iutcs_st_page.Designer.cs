@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_iutcs_st_page));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btn_play_snake = new Guna.UI.WinForms.GunaGradientTileButton();
             this.gunaCirclePictureBox3 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.btn_send_msg = new Guna.UI.WinForms.GunaGradientTileButton();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgwNotices = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_play_snake = new Guna.UI.WinForms.GunaGradientTileButton();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgw_chat_CS)).BeginInit();
@@ -89,6 +89,46 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
+            this.label6.Location = new System.Drawing.Point(26, 1543);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(314, 30);
+            this.label6.TabIndex = 105;
+            this.label6.Text = "Bored? Play a round then!";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btn_play_snake
+            // 
+            this.btn_play_snake.Animated = true;
+            this.btn_play_snake.AnimationHoverSpeed = 0.07F;
+            this.btn_play_snake.AnimationSpeed = 0.03F;
+            this.btn_play_snake.BackColor = System.Drawing.Color.Transparent;
+            this.btn_play_snake.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
+            this.btn_play_snake.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
+            this.btn_play_snake.BorderColor = System.Drawing.Color.Black;
+            this.btn_play_snake.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_play_snake.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_play_snake.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_play_snake.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(3)))), ((int)(((byte)(4)))));
+            this.btn_play_snake.Image = null;
+            this.btn_play_snake.ImageSize = new System.Drawing.Size(52, 52);
+            this.btn_play_snake.Location = new System.Drawing.Point(54, 1589);
+            this.btn_play_snake.Name = "btn_play_snake";
+            this.btn_play_snake.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.btn_play_snake.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.btn_play_snake.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_play_snake.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_play_snake.OnHoverImage = null;
+            this.btn_play_snake.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_play_snake.Size = new System.Drawing.Size(235, 39);
+            this.btn_play_snake.TabIndex = 104;
+            this.btn_play_snake.Text = "Play Snake Game";
+            this.btn_play_snake.Click += new System.EventHandler(this.btn_play_snake_Click);
+            // 
             // gunaCirclePictureBox3
             // 
             this.gunaCirclePictureBox3.BackColor = System.Drawing.Color.Transparent;
@@ -108,13 +148,13 @@
             this.btn_send_msg.AnimationHoverSpeed = 0.07F;
             this.btn_send_msg.AnimationSpeed = 0.03F;
             this.btn_send_msg.BackColor = System.Drawing.Color.Transparent;
-            this.btn_send_msg.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_send_msg.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.btn_send_msg.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
+            this.btn_send_msg.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
             this.btn_send_msg.BorderColor = System.Drawing.Color.Black;
             this.btn_send_msg.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_send_msg.FocusedColor = System.Drawing.Color.Empty;
             this.btn_send_msg.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_send_msg.ForeColor = System.Drawing.Color.White;
+            this.btn_send_msg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(3)))), ((int)(((byte)(4)))));
             this.btn_send_msg.Image = null;
             this.btn_send_msg.ImageSize = new System.Drawing.Size(52, 52);
             this.btn_send_msg.Location = new System.Drawing.Point(686, 1366);
@@ -225,14 +265,14 @@
             this.gunaGradientTileButton1.AnimationHoverSpeed = 0.07F;
             this.gunaGradientTileButton1.AnimationSpeed = 0.03F;
             this.gunaGradientTileButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGradientTileButton1.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.gunaGradientTileButton1.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.gunaGradientTileButton1.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
+            this.gunaGradientTileButton1.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
             this.gunaGradientTileButton1.BorderColor = System.Drawing.Color.Black;
             this.gunaGradientTileButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaGradientTileButton1.Enabled = false;
             this.gunaGradientTileButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaGradientTileButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaGradientTileButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaGradientTileButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(3)))), ((int)(((byte)(4)))));
             this.gunaGradientTileButton1.Image = null;
             this.gunaGradientTileButton1.ImageSize = new System.Drawing.Size(52, 52);
             this.gunaGradientTileButton1.Location = new System.Drawing.Point(78, 733);
@@ -254,14 +294,14 @@
             this.btn_rcs_web.AnimationHoverSpeed = 0.07F;
             this.btn_rcs_web.AnimationSpeed = 0.03F;
             this.btn_rcs_web.BackColor = System.Drawing.Color.Transparent;
-            this.btn_rcs_web.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_rcs_web.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.btn_rcs_web.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
+            this.btn_rcs_web.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
             this.btn_rcs_web.BorderColor = System.Drawing.Color.Black;
             this.btn_rcs_web.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_rcs_web.Enabled = false;
             this.btn_rcs_web.FocusedColor = System.Drawing.Color.Empty;
             this.btn_rcs_web.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_rcs_web.ForeColor = System.Drawing.Color.White;
+            this.btn_rcs_web.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(3)))), ((int)(((byte)(4)))));
             this.btn_rcs_web.Image = null;
             this.btn_rcs_web.ImageSize = new System.Drawing.Size(52, 52);
             this.btn_rcs_web.Location = new System.Drawing.Point(78, 869);
@@ -283,14 +323,14 @@
             this.btn_rcs_cp.AnimationHoverSpeed = 0.07F;
             this.btn_rcs_cp.AnimationSpeed = 0.03F;
             this.btn_rcs_cp.BackColor = System.Drawing.Color.Transparent;
-            this.btn_rcs_cp.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_rcs_cp.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.btn_rcs_cp.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
+            this.btn_rcs_cp.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
             this.btn_rcs_cp.BorderColor = System.Drawing.Color.Black;
             this.btn_rcs_cp.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_rcs_cp.Enabled = false;
             this.btn_rcs_cp.FocusedColor = System.Drawing.Color.Empty;
             this.btn_rcs_cp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_rcs_cp.ForeColor = System.Drawing.Color.White;
+            this.btn_rcs_cp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(3)))), ((int)(((byte)(4)))));
             this.btn_rcs_cp.Image = null;
             this.btn_rcs_cp.ImageSize = new System.Drawing.Size(52, 52);
             this.btn_rcs_cp.Location = new System.Drawing.Point(78, 801);
@@ -325,13 +365,13 @@
             this.btn_course_enroll.AnimationHoverSpeed = 0.07F;
             this.btn_course_enroll.AnimationSpeed = 0.03F;
             this.btn_course_enroll.BackColor = System.Drawing.Color.Transparent;
-            this.btn_course_enroll.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_course_enroll.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.btn_course_enroll.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
+            this.btn_course_enroll.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(8)))), ((int)(((byte)(11)))));
             this.btn_course_enroll.BorderColor = System.Drawing.Color.Black;
             this.btn_course_enroll.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_course_enroll.FocusedColor = System.Drawing.Color.Empty;
             this.btn_course_enroll.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_course_enroll.ForeColor = System.Drawing.Color.White;
+            this.btn_course_enroll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(3)))), ((int)(((byte)(4)))));
             this.btn_course_enroll.Image = null;
             this.btn_course_enroll.ImageSize = new System.Drawing.Size(52, 52);
             this.btn_course_enroll.Location = new System.Drawing.Point(78, 661);
@@ -434,46 +474,6 @@
             this.label1.TabIndex = 84;
             this.label1.Text = "Notice Board";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btn_play_snake
-            // 
-            this.btn_play_snake.Animated = true;
-            this.btn_play_snake.AnimationHoverSpeed = 0.07F;
-            this.btn_play_snake.AnimationSpeed = 0.03F;
-            this.btn_play_snake.BackColor = System.Drawing.Color.Transparent;
-            this.btn_play_snake.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_play_snake.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
-            this.btn_play_snake.BorderColor = System.Drawing.Color.Black;
-            this.btn_play_snake.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_play_snake.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_play_snake.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_play_snake.ForeColor = System.Drawing.Color.White;
-            this.btn_play_snake.Image = null;
-            this.btn_play_snake.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_play_snake.Location = new System.Drawing.Point(54, 1589);
-            this.btn_play_snake.Name = "btn_play_snake";
-            this.btn_play_snake.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.btn_play_snake.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.btn_play_snake.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_play_snake.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_play_snake.OnHoverImage = null;
-            this.btn_play_snake.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_play_snake.Size = new System.Drawing.Size(235, 39);
-            this.btn_play_snake.TabIndex = 104;
-            this.btn_play_snake.Text = "Play Snake Game";
-            this.btn_play_snake.Click += new System.EventHandler(this.btn_play_snake_Click);
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label6.Location = new System.Drawing.Point(26, 1543);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(314, 30);
-            this.label6.TabIndex = 105;
-            this.label6.Text = "Bored? Play a round then!";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UC_iutcs_st_page
             // 
