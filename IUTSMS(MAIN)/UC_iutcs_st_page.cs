@@ -78,52 +78,50 @@ namespace IUTSMS_MAIN_
         {
 
         }
+        
 
-        private void UC_iutcs_st_page_Load(object sender, EventArgs e)
+        void DoIunfreezeButton()
         {
-            GetNotices();
-            getDiscuss();
-
             try
             {
 
 
                 conn.Open();
 
-                
-                string t = "SELECT * FROM cs_table where st_id="+st_login_Form.id+"";
+
+                string t = "SELECT * FROM cs_table where st_id=" + st_login_Form.id + "";
 
                 cmd = new OleDbCommand(t, conn);
 
                 OleDbDataReader dr = cmd.ExecuteReader();
 
-                if(dr.Read())
+                if (dr.Read())
                 {
 
                     //MessageBox.Show($"{dr["java"].ToString()}\t{dr["cp"].ToString()}\t{dr["WebDev"].ToString()}");
-                    
-                    
-                    
-                    if(dr["java"].ToString()=="True")
+
+
+
+                    if (dr["java"].ToString() == "True")
                     {
-                        gunaGradientTileButton1.Enabled= true;
+                        gunaGradientTileButton1.Enabled = true;
 
                     }
-                    if(dr["cp"].ToString()=="True")
+                    if (dr["cp"].ToString() == "True")
                     {
-                        btn_rcs_cp.Enabled= true;
+                        btn_rcs_cp.Enabled = true;
                     }
-                    if(dr["WebDev"].ToString()=="True")
+                    if (dr["WebDev"].ToString() == "True")
                     {
-                        btn_rcs_web.Enabled= true;
+                        btn_rcs_web.Enabled = true;
                     }
-                   
+
                 }
 
                 conn.Close();
 
 
-                
+
 
 
 
@@ -133,6 +131,13 @@ namespace IUTSMS_MAIN_
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private void UC_iutcs_st_page_Load(object sender, EventArgs e)
+        {
+            GetNotices();
+            getDiscuss();
+            DoIunfreezeButton();
+
         }
 
         private void gunaGradientTileButton1_Click(object sender, EventArgs e)

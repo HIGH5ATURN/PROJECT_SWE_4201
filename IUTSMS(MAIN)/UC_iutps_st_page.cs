@@ -135,10 +135,72 @@ namespace IUTSMS_MAIN_
             }
         }
 
+
+
+
+        void DoIunfreezeButton()
+        {
+            try
+            {
+
+
+                conn.Open();
+
+
+                string t = "SELECT * FROM ps_table where st_id=" + st_login_Form.id + "";
+
+                cmd = new OleDbCommand(t, conn);
+
+                OleDbDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+
+                    //MessageBox.Show($"{dr["java"].ToString()}\t{dr["cp"].ToString()}\t{dr["WebDev"].ToString()}");
+
+
+
+                    if (dr["cam"].ToString() == "True")
+                    {
+                        gunaGradientTileButton1.Enabled = true;
+
+                    }
+                    if (dr["adobe"].ToString() == "True")
+                    {
+                        btn_rcs_photoshop_course.Enabled = true;
+                    }
+                    if (dr["graph"].ToString() == "True")
+                    {
+                        btn_rcs_graphic_course.Enabled = true;
+                    }
+
+                }
+
+                conn.Close();
+
+
+
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+
+
+
+
         private void UC_iutps_st_page_Load(object sender, EventArgs e)
         {
             getDiscuss();
             GetNotices();
+            DoIunfreezeButton();
         }
 
         private void btn_course_enroll_Click(object sender, EventArgs e)
