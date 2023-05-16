@@ -169,6 +169,7 @@
             this.dgw_chat_DS.Location = new System.Drawing.Point(68, 855);
             this.dgw_chat_DS.Name = "dgw_chat_DS";
             this.dgw_chat_DS.ReadOnly = true;
+            this.dgw_chat_DS.RowHeadersVisible = false;
             this.dgw_chat_DS.RowHeadersWidth = 51;
             this.dgw_chat_DS.RowTemplate.Height = 50;
             this.dgw_chat_DS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -332,6 +333,7 @@
             this.dgwNotices.Location = new System.Drawing.Point(103, 117);
             this.dgwNotices.Name = "dgwNotices";
             this.dgwNotices.ReadOnly = true;
+            this.dgwNotices.RowHeadersVisible = false;
             this.dgwNotices.RowHeadersWidth = 51;
             this.dgwNotices.RowTemplate.Height = 50;
             this.dgwNotices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
