@@ -46,24 +46,30 @@ namespace IUTSMS_MAIN_
         void GetNotices()
         
         {
-        
-            conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
+            try
+            {
+                conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
 
-            dt = new DataTable();
+                dt = new DataTable();
 
-            adapter = new OleDbDataAdapter("SELECT * FROM siks_notice", conn);
+                adapter = new OleDbDataAdapter("SELECT * FROM siks_notice", conn);
 
-           
-            conn.Open();
-            
-            
-            adapter.Fill(dt);
-            
-            
-            dgwNotices.DataSource = dt;
-            
-            
-            conn.Close();
+
+                conn.Open();
+
+
+                adapter.Fill(dt);
+
+
+                dgwNotices.DataSource = dt;
+
+
+                conn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         
         
         }
@@ -77,26 +83,34 @@ namespace IUTSMS_MAIN_
 
         void fillmember()
         {
-            conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
+            try
+            {
+                conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
 
-            
-            dt1 = new DataTable();
+
+                dt1 = new DataTable();
 
 
-            adapter1 = new OleDbDataAdapter("SELECT * FROM siks_table", conn);
+                adapter1 = new OleDbDataAdapter("SELECT * FROM siks_table", conn);
 
-          
-            
-            conn.Open();
-            
-            
-            adapter1.Fill(dt1);
-            
-            
-            dgw_members.DataSource = dt1;
-            
-            
-            conn.Close();
+
+
+                conn.Open();
+
+
+                adapter1.Fill(dt1);
+
+
+                dgw_members.DataSource = dt1;
+
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
         private void btn_publish_Click(object sender, EventArgs e)
         {
@@ -133,7 +147,17 @@ namespace IUTSMS_MAIN_
 
         private void dgwNotices_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            txt_notice_no.Text = dgwNotices.CurrentRow.Cells[0].Value.ToString();
+            try
+            {
+
+                txt_notice_no.Text = dgwNotices.CurrentRow.Cells[0].Value.ToString();
+
+            }
+            catch
+            {
+                txt_notice_no.Text = "NO NOTICE";
+
+            }
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)

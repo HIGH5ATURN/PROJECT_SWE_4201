@@ -75,7 +75,7 @@ namespace IUTSMS_MAIN_
                 dt1 = new DataTable();
 
 
-                adapter1 = new OleDbDataAdapter("SELECT * FROM ds_table", conn);
+                adapter1 = new OleDbDataAdapter("SELECT * FROM ps_table", conn);
 
 
 
@@ -191,10 +191,19 @@ namespace IUTSMS_MAIN_
 
         private void dgwNotices_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
         {
-          
-            
-            txt_notice_no.Text = dgwNotices.CurrentRow.Cells[0].Value.ToString();
-       
+
+            try
+            {
+
+                txt_notice_no.Text = dgwNotices.CurrentRow.Cells[0].Value.ToString();
+
+            }
+            catch
+            {
+                txt_notice_no.Text = "NO NOTICE";
+
+            }
+
         }
 
         private void admin_back_Button_Click(object sender, EventArgs e)

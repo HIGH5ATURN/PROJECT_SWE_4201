@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_iutps_st_page));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gunaCirclePictureBox3 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.btn_send_msg = new Guna.UI.WinForms.GunaGradientTileButton();
@@ -117,7 +121,7 @@
             this.btn_send_msg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(192)))), ((int)(((byte)(68)))));
             this.btn_send_msg.Image = null;
             this.btn_send_msg.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_send_msg.Location = new System.Drawing.Point(716, 1357);
+            this.btn_send_msg.Location = new System.Drawing.Point(401, 1589);
             this.btn_send_msg.Name = "btn_send_msg";
             this.btn_send_msg.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(192)))), ((int)(((byte)(68)))));
             this.btn_send_msg.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(192)))), ((int)(((byte)(68)))));
@@ -135,7 +139,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label5.Location = new System.Drawing.Point(634, 971);
+            this.label5.Location = new System.Drawing.Point(325, 1368);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(387, 30);
             this.label5.TabIndex = 111;
@@ -145,10 +149,10 @@
             // txt_msg
             // 
             this.txt_msg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_msg.Location = new System.Drawing.Point(652, 1004);
+            this.txt_msg.Location = new System.Drawing.Point(62, 1401);
             this.txt_msg.Multiline = true;
             this.txt_msg.Name = "txt_msg";
-            this.txt_msg.Size = new System.Drawing.Size(350, 338);
+            this.txt_msg.Size = new System.Drawing.Size(874, 150);
             this.txt_msg.TabIndex = 110;
             // 
             // dgw_chat_PS
@@ -157,14 +161,31 @@
             this.dgw_chat_PS.AllowUserToDeleteRows = false;
             this.dgw_chat_PS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgw_chat_PS.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw_chat_PS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgw_chat_PS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgw_chat_PS.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgw_chat_PS.Location = new System.Drawing.Point(62, 1004);
             this.dgw_chat_PS.Name = "dgw_chat_PS";
             this.dgw_chat_PS.ReadOnly = true;
+            this.dgw_chat_PS.RowHeadersVisible = false;
             this.dgw_chat_PS.RowHeadersWidth = 51;
-            this.dgw_chat_PS.RowTemplate.Height = 24;
+            this.dgw_chat_PS.RowTemplate.Height = 50;
             this.dgw_chat_PS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw_chat_PS.Size = new System.Drawing.Size(556, 338);
+            this.dgw_chat_PS.Size = new System.Drawing.Size(874, 338);
             this.dgw_chat_PS.TabIndex = 109;
             this.dgw_chat_PS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_chat_CS_CellContentClick);
             // 
@@ -173,7 +194,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label6.Location = new System.Drawing.Point(56, 971);
+            this.label6.Location = new System.Drawing.Point(430, 971);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(203, 30);
             this.label6.TabIndex = 108;
@@ -235,7 +256,7 @@
             this.fb_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
             this.fb_button.Image = ((System.Drawing.Image)(resources.GetObject("fb_button.Image")));
             this.fb_button.ImageSize = new System.Drawing.Size(52, 52);
-            this.fb_button.Location = new System.Drawing.Point(559, 1666);
+            this.fb_button.Location = new System.Drawing.Point(562, 2032);
             this.fb_button.Name = "fb_button";
             this.fb_button.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
             this.fb_button.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
@@ -253,7 +274,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label9.Location = new System.Drawing.Point(492, 1601);
+            this.label9.Location = new System.Drawing.Point(495, 1967);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(206, 30);
             this.label9.TabIndex = 103;
@@ -265,9 +286,9 @@
             this.gunaCirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(545, 2059);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(570, 2280);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(50, 48);
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(50, 46);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaCirclePictureBox1.TabIndex = 102;
             this.gunaCirclePictureBox1.TabStop = false;
@@ -454,12 +475,29 @@
             this.dgwNotices.AllowUserToDeleteRows = false;
             this.dgwNotices.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwNotices.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgwNotices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgwNotices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgwNotices.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgwNotices.Location = new System.Drawing.Point(128, 142);
             this.dgwNotices.Name = "dgwNotices";
             this.dgwNotices.ReadOnly = true;
+            this.dgwNotices.RowHeadersVisible = false;
             this.dgwNotices.RowHeadersWidth = 51;
-            this.dgwNotices.RowTemplate.Height = 24;
+            this.dgwNotices.RowTemplate.Height = 50;
             this.dgwNotices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgwNotices.Size = new System.Drawing.Size(808, 440);
             this.dgwNotices.TabIndex = 89;
