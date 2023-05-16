@@ -40,6 +40,10 @@ namespace IUTSMS_MAIN_
 
             gunaGradientTileButton5.ForeColor = Color.FromArgb(240, 240, 240);
 
+            gunaGradientTileButton5.OnHoverBaseColor1 = Color.FromArgb(0, 52, 51);
+
+
+            gunaGradientTileButton5.OnHoverBaseColor2 = Color.FromArgb(0, 75, 73);
 
             //Iutcs_button
 
@@ -49,6 +53,13 @@ namespace IUTSMS_MAIN_
             gunaGradientTileButton6.BaseColor2 = Color.FromArgb(0, 52, 51);
 
             gunaGradientTileButton6.ForeColor = Color.FromArgb(240, 240, 240);
+
+
+            gunaGradientTileButton6.OnHoverBaseColor1 = Color.FromArgb(0, 52, 51);
+
+
+            gunaGradientTileButton6.OnHoverBaseColor2 = Color.FromArgb(0, 75, 73);
+
 
             //iutps_button
 
@@ -60,6 +71,15 @@ namespace IUTSMS_MAIN_
 
             iutps_button.ForeColor = Color.FromArgb(240, 240, 240);
 
+
+            iutps_button.OnHoverBaseColor1 = Color.FromArgb(0, 52, 51);
+
+
+            iutps_button.OnHoverBaseColor2 = Color.FromArgb(0, 75, 73);
+
+
+            //ds
+
             iutds_button.BaseColor1 = Color.FromArgb(0, 52, 51);
 
 
@@ -68,12 +88,24 @@ namespace IUTSMS_MAIN_
 
             iutds_button.ForeColor = Color.FromArgb(240, 240, 240);
 
+            iutds_button.OnHoverBaseColor1 = Color.FromArgb(0, 52, 51);
+
+
+            iutds_button.OnHoverBaseColor2 = Color.FromArgb(0, 75, 73);
+
+            //siks
+
             iutsiks_Button.BaseColor1 = Color.FromArgb(0, 52, 51);
 
 
             iutsiks_Button.BaseColor2 = Color.FromArgb(0, 52, 51);
 
             iutsiks_Button.ForeColor = Color.FromArgb(240, 240, 240);
+
+            iutsiks_Button.OnHoverBaseColor1 = Color.FromArgb(0, 52, 51);
+
+
+            iutsiks_Button.OnHoverBaseColor2 = Color.FromArgb(0, 75, 73);
         }
         private void stdnt_club_dash_Load(object sender, EventArgs e)
         {
@@ -201,7 +233,13 @@ namespace IUTSMS_MAIN_
 
             gunaGradientTileButton5.BaseColor2 = Color.FromArgb(94, 84, 82);
 
-            gunaGradientTileButton5.ForeColor = Color.FromArgb(60, 29, 18);
+            gunaGradientTileButton5.ForeColor = Color.Black;
+
+            gunaGradientTileButton5.OnHoverBaseColor1 = Color.FromArgb(60, 29, 18);
+
+            gunaGradientTileButton5.OnHoverBaseColor2 = Color.FromArgb(60, 29, 18);
+
+            gunaGradientTileButton5.OnHoverForeColor = Color.FromArgb(240,240,240);
 
             //Iutcs_button
 
@@ -211,8 +249,13 @@ namespace IUTSMS_MAIN_
             gunaGradientTileButton6.BaseColor2 = Color.FromArgb(94, 84, 82);
 
             
-            gunaGradientTileButton6.ForeColor = Color.FromArgb(60, 29, 18);
+            gunaGradientTileButton6.ForeColor = Color.Black;
 
+            gunaGradientTileButton6.OnHoverBaseColor1 = Color.FromArgb(60, 29, 18);
+
+            gunaGradientTileButton6.OnHoverBaseColor2 = Color.FromArgb(60, 29, 18);
+
+            gunaGradientTileButton6.OnHoverForeColor = Color.FromArgb(240, 240, 240);
 
             //iutps_button
 
@@ -222,7 +265,14 @@ namespace IUTSMS_MAIN_
             iutps_button.BaseColor2 = Color.FromArgb(94, 84, 82);
 
 
-            iutps_button.ForeColor = Color.FromArgb(60, 29, 18);
+            iutps_button.ForeColor = Color.Black;
+
+            iutps_button.OnHoverBaseColor1 = Color.FromArgb(60, 29, 18);
+
+            iutps_button.OnHoverBaseColor2 = Color.FromArgb(60, 29, 18);
+
+            iutps_button.OnHoverForeColor = Color.FromArgb(240, 240, 240);
+            
 
 
             //iutds
@@ -231,7 +281,13 @@ namespace IUTSMS_MAIN_
 
             iutds_button.BaseColor2 = Color.FromArgb(94, 84, 82);
 
-            iutds_button.ForeColor = Color.FromArgb(60, 29, 18);
+            iutds_button.ForeColor = Color.Black;
+
+            iutds_button.OnHoverBaseColor1 = Color.FromArgb(60, 29, 18);
+
+            iutds_button.OnHoverBaseColor2 = Color.FromArgb(60, 29, 18);
+
+            iutds_button.OnHoverForeColor = Color.FromArgb(240, 240, 240);
 
 
             //iutsiks
@@ -241,7 +297,13 @@ namespace IUTSMS_MAIN_
             iutsiks_Button.BaseColor2 = Color.FromArgb(94, 84, 82);
 
 
-            iutsiks_Button.ForeColor = Color.FromArgb(60, 29, 18);
+            iutsiks_Button.ForeColor = Color.Black;
+
+            iutsiks_Button.OnHoverBaseColor1 = Color.FromArgb(60, 29, 18);
+
+            iutsiks_Button.OnHoverBaseColor2 = Color.FromArgb(60, 29, 18);
+
+            iutsiks_Button.OnHoverForeColor = Color.FromArgb(240, 240, 240);
         }
 
         void cs_theme()
@@ -266,6 +328,13 @@ namespace IUTSMS_MAIN_
             gunaGradientTileButton5.ForeColor = Color.FromArgb(252, 3, 4);
 
 
+            gunaGradientTileButton5.OnHoverBaseColor1 = Color.FromArgb(202, 235, 218);
+
+            gunaGradientTileButton5.OnHoverBaseColor2 = Color.FromArgb(202, 235, 218);
+
+            gunaGradientTileButton5.OnHoverForeColor = Color.Black;
+
+
             //Iutcs_button
 
             gunaGradientTileButton6.BaseColor1 = Color.FromArgb(4, 8, 11);
@@ -276,6 +345,12 @@ namespace IUTSMS_MAIN_
 
 
             gunaGradientTileButton6.ForeColor = Color.FromArgb(252, 3, 4);
+
+            gunaGradientTileButton6.OnHoverBaseColor1 = Color.FromArgb(202, 235, 218);
+
+            gunaGradientTileButton6.OnHoverBaseColor2 = Color.FromArgb(202, 235, 218);
+
+            gunaGradientTileButton6.OnHoverForeColor = Color.Black;
             //iutps_button
 
             iutps_button.BaseColor1 = Color.FromArgb(4, 8, 11);
@@ -284,6 +359,13 @@ namespace IUTSMS_MAIN_
             iutps_button.BaseColor2 = Color.FromArgb(4, 8, 11);
             
             iutps_button.ForeColor = Color.FromArgb(252, 3, 4);
+
+
+            iutps_button.OnHoverBaseColor1 = Color.FromArgb(202, 235, 218);
+           
+            iutps_button.OnHoverBaseColor2 = Color.FromArgb(202, 235, 218);
+
+            iutps_button.OnHoverForeColor = Color.Black;
 
 
 
@@ -296,7 +378,13 @@ namespace IUTSMS_MAIN_
 
             iutds_button.ForeColor = Color.FromArgb(252, 3, 4);
 
-           
+            iutds_button.OnHoverBaseColor1 = Color.FromArgb(202, 235, 218);
+
+            iutds_button.OnHoverBaseColor2 = Color.FromArgb(202, 235, 218);
+
+            iutds_button.OnHoverForeColor = Color.Black;
+
+
             //siks
             iutsiks_Button.BaseColor1 = Color.FromArgb(4, 8, 11);
 
@@ -304,6 +392,12 @@ namespace IUTSMS_MAIN_
             iutsiks_Button.BaseColor2 = Color.FromArgb(4, 8, 11);
 
             iutsiks_Button.ForeColor = Color.FromArgb(252, 3, 4);
+
+            iutsiks_Button.OnHoverBaseColor1 = Color.FromArgb(202, 235, 218);
+
+            iutsiks_Button.OnHoverBaseColor2 = Color.FromArgb(202, 235, 218);
+
+            iutsiks_Button.OnHoverForeColor = Color.Black;
         }
 
 
@@ -324,6 +418,12 @@ namespace IUTSMS_MAIN_
 
             gunaGradientTileButton5.ForeColor = Color.FromArgb(131, 192, 68);
 
+            gunaGradientTileButton5.OnHoverBaseColor1 = Color.FromArgb(131, 192, 68);
+
+            gunaGradientTileButton5.OnHoverBaseColor2 = Color.FromArgb(18, 16, 42);
+
+            gunaGradientTileButton5.OnHoverForeColor = Color.FromArgb(240, 240, 240);
+
             //Iutcs_button
 
             gunaGradientTileButton6.BaseColor1 = Color.FromArgb(18, 16, 42);
@@ -333,6 +433,13 @@ namespace IUTSMS_MAIN_
 
 
             gunaGradientTileButton6.ForeColor = Color.FromArgb(131, 192, 68);
+
+
+            gunaGradientTileButton6.OnHoverBaseColor1 = Color.FromArgb(131, 192, 68);
+
+            gunaGradientTileButton6.OnHoverBaseColor2 = Color.FromArgb(18, 16, 42);
+
+            gunaGradientTileButton6.OnHoverForeColor = Color.FromArgb(240, 240, 240);
 
 
             //iutps_button
@@ -346,6 +453,13 @@ namespace IUTSMS_MAIN_
             iutps_button.ForeColor = Color.FromArgb(131, 192, 68);
 
 
+            iutps_button.OnHoverBaseColor1 = Color.FromArgb(131, 192, 68);
+
+            iutps_button.OnHoverBaseColor2 = Color.FromArgb(18, 16, 42);
+
+            iutps_button.OnHoverForeColor = Color.FromArgb(240, 240, 240);
+
+
             //iutds
             iutds_button.BaseColor1 = Color.FromArgb(18, 16, 42);
 
@@ -353,6 +467,14 @@ namespace IUTSMS_MAIN_
             iutds_button.BaseColor2 = Color.FromArgb(18, 16, 42);
 
             iutds_button.ForeColor = Color.FromArgb(131, 192, 68);
+
+
+            iutds_button.OnHoverBaseColor1 = Color.FromArgb(131, 192, 68);
+
+            iutds_button.OnHoverBaseColor2 = Color.FromArgb(18, 16, 42);
+
+            iutds_button.OnHoverForeColor = Color.FromArgb(240, 240, 240);
+
 
 
             //iutsiks
@@ -363,6 +485,15 @@ namespace IUTSMS_MAIN_
 
 
             iutsiks_Button.ForeColor = Color.FromArgb(131, 192, 68);
+
+
+            iutsiks_Button.OnHoverBaseColor1 = Color.FromArgb(131, 192, 68);
+
+            iutsiks_Button.OnHoverBaseColor2 = Color.FromArgb(18, 16, 42);
+
+            iutsiks_Button.OnHoverForeColor = Color.FromArgb(240, 240, 240);
+
+
 
         }
 
@@ -385,6 +516,12 @@ namespace IUTSMS_MAIN_
 
             gunaGradientTileButton5.ForeColor = Color.FromArgb(115, 196, 141);
 
+            gunaGradientTileButton5.OnHoverBaseColor1 = Color.FromArgb(115, 196, 141);
+
+            gunaGradientTileButton5.OnHoverBaseColor2 = Color.FromArgb(115, 196, 141);
+
+            gunaGradientTileButton5.OnHoverForeColor = Color.FromArgb(240,240,240);
+
             //Iutcs_button
 
             gunaGradientTileButton6.BaseColor1 = Color.FromArgb(46, 52, 54);
@@ -394,6 +531,12 @@ namespace IUTSMS_MAIN_
 
 
             gunaGradientTileButton6.ForeColor = Color.FromArgb(115, 196, 141);
+
+            gunaGradientTileButton6.OnHoverBaseColor1 = Color.FromArgb(115, 196, 141);
+
+            gunaGradientTileButton6.OnHoverBaseColor2 = Color.FromArgb(115, 196, 141);
+
+            gunaGradientTileButton6.OnHoverForeColor = Color.FromArgb(240, 240, 240);
 
 
             //iutps_button
@@ -406,6 +549,12 @@ namespace IUTSMS_MAIN_
 
             iutps_button.ForeColor = Color.FromArgb(115, 196, 141);
 
+            iutps_button.OnHoverBaseColor1 = Color.FromArgb(115, 196, 141);
+
+            iutps_button.OnHoverBaseColor2 = Color.FromArgb(115, 196, 141);
+
+            iutps_button.OnHoverForeColor = Color.FromArgb(240, 240, 240);
+
 
             //iutds
             iutds_button.BaseColor1 = Color.FromArgb(46, 52, 54);
@@ -414,6 +563,13 @@ namespace IUTSMS_MAIN_
             iutds_button.BaseColor2 = Color.FromArgb(46, 52, 54);
 
             iutds_button.ForeColor = Color.FromArgb(115, 196, 141);
+
+            iutds_button.OnHoverBaseColor1 = Color.FromArgb(115, 196, 141);
+
+            iutds_button.OnHoverBaseColor2 = Color.FromArgb(115, 196, 141);
+
+            iutds_button.OnHoverForeColor = Color.FromArgb(240, 240, 240);
+
 
 
             //iutsiks
@@ -425,8 +581,15 @@ namespace IUTSMS_MAIN_
 
             iutsiks_Button.ForeColor = Color.FromArgb(115, 196, 141);
 
+            iutsiks_Button.OnHoverBaseColor1 = Color.FromArgb(115, 196, 141);
+
+            iutsiks_Button.OnHoverBaseColor2 = Color.FromArgb(115, 196, 141);
+
+            iutsiks_Button.OnHoverForeColor = Color.FromArgb(240, 240, 240);
+
+
         }
-        
+
         private void gunaGradientTileButton6_Click(object sender, EventArgs e)
         {
 
@@ -507,8 +670,7 @@ namespace IUTSMS_MAIN_
             ds_theme();
 
 
-
-
+ 
 
 
             bool flag = false;
