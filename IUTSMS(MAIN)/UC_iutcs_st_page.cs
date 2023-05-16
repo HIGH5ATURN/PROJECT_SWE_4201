@@ -223,7 +223,7 @@ namespace IUTSMS_MAIN_
                 conn.Close();
                 getDiscuss();
 
-                
+                txt_msg.Clear();
 
 
             }

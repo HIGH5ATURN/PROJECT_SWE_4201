@@ -155,7 +155,7 @@
             this.btn_send_msg.ForeColor = System.Drawing.Color.White;
             this.btn_send_msg.Image = null;
             this.btn_send_msg.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_send_msg.Location = new System.Drawing.Point(466, 1674);
+            this.btn_send_msg.Location = new System.Drawing.Point(424, 1671);
             this.btn_send_msg.Name = "btn_send_msg";
             this.btn_send_msg.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
             this.btn_send_msg.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
@@ -173,7 +173,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label13.Location = new System.Drawing.Point(390, 1481);
+            this.label13.Location = new System.Drawing.Point(353, 1481);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(387, 30);
             this.label13.TabIndex = 111;
@@ -185,10 +185,10 @@
             this.txt_msg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_msg.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_msg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.txt_msg.Location = new System.Drawing.Point(132, 1524);
+            this.txt_msg.Location = new System.Drawing.Point(123, 1514);
             this.txt_msg.Multiline = true;
             this.txt_msg.Name = "txt_msg";
-            this.txt_msg.Size = new System.Drawing.Size(865, 124);
+            this.txt_msg.Size = new System.Drawing.Size(773, 124);
             this.txt_msg.TabIndex = 110;
             // 
             // dgw_chat_SIKS
@@ -221,7 +221,7 @@
             this.dgw_chat_SIKS.RowHeadersWidth = 51;
             this.dgw_chat_SIKS.RowTemplate.Height = 50;
             this.dgw_chat_SIKS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw_chat_SIKS.Size = new System.Drawing.Size(857, 174);
+            this.dgw_chat_SIKS.Size = new System.Drawing.Size(773, 174);
             this.dgw_chat_SIKS.TabIndex = 109;
             this.dgw_chat_SIKS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_chat_CS_CellContentClick);
             // 
