@@ -34,30 +34,36 @@ namespace IUTSMS_MAIN_
         DataTable dt;
         void GetNotices()
         {
+            try
+            {
 
-
-            conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
-
-
-
-            dt = new DataTable();
-
-            
-            
-            adapter = new OleDbDataAdapter("SELECT * FROM cs_notice", conn);
+                conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
 
 
 
-            conn.Open();
-            
-            
-            adapter.Fill(dt);
-       
-            
-            dgwNotices.DataSource = dt;
-            
-            
-            conn.Close();
+                dt = new DataTable();
+
+
+
+                adapter = new OleDbDataAdapter("SELECT * FROM cs_notice", conn);
+
+
+
+                conn.Open();
+
+
+                adapter.Fill(dt);
+
+
+                dgwNotices.DataSource = dt;
+
+
+                conn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
@@ -126,39 +132,53 @@ namespace IUTSMS_MAIN_
         }
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            
-            
-            string query = "DELETE FROM cs_notice where ID=@id";
+            try
+            {
 
-            cmd = new OleDbCommand(query, conn);
-         
+                string query = "DELETE FROM cs_notice where ID=@id";
+
+                cmd = new OleDbCommand(query, conn);
+
+
+
+
+                cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_notice_no.Text));
+
+
+                conn.Open();
+
+
+                cmd.ExecuteNonQuery();
+
+
+                conn.Close();
+                GetNotices();
+
+                MessageBox.Show("Notice Deleted!");
+            }
+            catch(Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            
+            }
             
             
-            
-            cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_notice_no.Text));
-            
-            
-            conn.Open();
-            
-            
-            cmd.ExecuteNonQuery();
-            
-            
-            conn.Close();
-            
-            
-            MessageBox.Show("Notice Deleted!");
-            
-            
-            GetNotices();
         }
 
         private void dgwNotices_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
         {
-          
-            
-            txt_notice_no.Text = dgwNotices.CurrentRow.Cells[0].Value.ToString();
-        
+            try
+            {
+
+                txt_notice_no.Text = dgwNotices.CurrentRow.Cells[0].Value.ToString();
+
+            }
+            catch
+            {
+                txt_notice_no.Text = "NO NOTICE";
+                
+            }
         
         }
 

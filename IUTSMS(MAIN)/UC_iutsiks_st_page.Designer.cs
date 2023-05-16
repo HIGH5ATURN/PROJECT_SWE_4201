@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_iutsiks_st_page));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gunaCirclePictureBox3 = new Guna.UI.WinForms.GunaCirclePictureBox();
@@ -44,14 +48,6 @@
             this.Read_Hadith_Button = new Guna.UI.WinForms.GunaGradientTileButton();
             this.Read_Quran_Button = new Guna.UI.WinForms.GunaGradientTileButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.login_button = new Guna.UI.WinForms.GunaGradientTileButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.donation_amount_textbox = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.donation_bank_account_no_textbox = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -71,6 +67,14 @@
             this.zakah_bank_balance_textbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.gunaCirclePictureBox2 = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.login_button = new Guna.UI.WinForms.GunaGradientTileButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.donation_amount_textbox = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.donation_bank_account_no_textbox = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgw_chat_SIKS)).BeginInit();
@@ -95,6 +99,14 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.login_button);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.donation_amount_textbox);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.donation_bank_account_no_textbox);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.gunaCirclePictureBox3);
             this.panel1.Controls.Add(this.btn_send_msg);
             this.panel1.Controls.Add(this.label13);
@@ -108,14 +120,6 @@
             this.panel1.Controls.Add(this.Read_Hadith_Button);
             this.panel1.Controls.Add(this.Read_Quran_Button);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.login_button);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.donation_amount_textbox);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.donation_bank_account_no_textbox);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(0, 91);
@@ -128,7 +132,7 @@
             this.gunaCirclePictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox3.BaseColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox3.Image")));
-            this.gunaCirclePictureBox3.Location = new System.Drawing.Point(652, 638);
+            this.gunaCirclePictureBox3.Location = new System.Drawing.Point(679, 585);
             this.gunaCirclePictureBox3.Name = "gunaCirclePictureBox3";
             this.gunaCirclePictureBox3.Size = new System.Drawing.Size(300, 300);
             this.gunaCirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -151,7 +155,7 @@
             this.btn_send_msg.ForeColor = System.Drawing.Color.White;
             this.btn_send_msg.Image = null;
             this.btn_send_msg.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_send_msg.Location = new System.Drawing.Point(666, 1469);
+            this.btn_send_msg.Location = new System.Drawing.Point(466, 1674);
             this.btn_send_msg.Name = "btn_send_msg";
             this.btn_send_msg.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
             this.btn_send_msg.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
@@ -169,7 +173,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label13.Location = new System.Drawing.Point(584, 1083);
+            this.label13.Location = new System.Drawing.Point(390, 1481);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(387, 30);
             this.label13.TabIndex = 111;
@@ -179,10 +183,12 @@
             // txt_msg
             // 
             this.txt_msg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_msg.Location = new System.Drawing.Point(602, 1116);
+            this.txt_msg.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_msg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.txt_msg.Location = new System.Drawing.Point(132, 1524);
             this.txt_msg.Multiline = true;
             this.txt_msg.Name = "txt_msg";
-            this.txt_msg.Size = new System.Drawing.Size(350, 338);
+            this.txt_msg.Size = new System.Drawing.Size(865, 124);
             this.txt_msg.TabIndex = 110;
             // 
             // dgw_chat_SIKS
@@ -191,14 +197,31 @@
             this.dgw_chat_SIKS.AllowUserToDeleteRows = false;
             this.dgw_chat_SIKS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgw_chat_SIKS.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw_chat_SIKS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgw_chat_SIKS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgw_chat_SIKS.Location = new System.Drawing.Point(12, 1116);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgw_chat_SIKS.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgw_chat_SIKS.Location = new System.Drawing.Point(123, 1275);
             this.dgw_chat_SIKS.Name = "dgw_chat_SIKS";
             this.dgw_chat_SIKS.ReadOnly = true;
+            this.dgw_chat_SIKS.RowHeadersVisible = false;
             this.dgw_chat_SIKS.RowHeadersWidth = 51;
-            this.dgw_chat_SIKS.RowTemplate.Height = 24;
+            this.dgw_chat_SIKS.RowTemplate.Height = 50;
             this.dgw_chat_SIKS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw_chat_SIKS.Size = new System.Drawing.Size(556, 338);
+            this.dgw_chat_SIKS.Size = new System.Drawing.Size(857, 174);
             this.dgw_chat_SIKS.TabIndex = 109;
             this.dgw_chat_SIKS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_chat_CS_CellContentClick);
             // 
@@ -207,7 +230,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label16.Location = new System.Drawing.Point(6, 1083);
+            this.label16.Location = new System.Drawing.Point(488, 1242);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(203, 30);
             this.label16.TabIndex = 108;
@@ -220,14 +243,30 @@
             this.dgwNotices.AllowUserToDeleteRows = false;
             this.dgwNotices.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwNotices.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgwNotices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgwNotices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwNotices.Location = new System.Drawing.Point(440, 61);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgwNotices.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgwNotices.Location = new System.Drawing.Point(123, 61);
             this.dgwNotices.Name = "dgwNotices";
             this.dgwNotices.ReadOnly = true;
             this.dgwNotices.RowHeadersWidth = 51;
-            this.dgwNotices.RowTemplate.Height = 24;
+            this.dgwNotices.RowTemplate.Height = 50;
             this.dgwNotices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgwNotices.Size = new System.Drawing.Size(553, 338);
+            this.dgwNotices.Size = new System.Drawing.Size(870, 338);
             this.dgwNotices.TabIndex = 80;
             // 
             // fb_button
@@ -245,7 +284,7 @@
             this.fb_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
             this.fb_button.Image = ((System.Drawing.Image)(resources.GetObject("fb_button.Image")));
             this.fb_button.ImageSize = new System.Drawing.Size(52, 52);
-            this.fb_button.Location = new System.Drawing.Point(589, 1648);
+            this.fb_button.Location = new System.Drawing.Point(580, 2160);
             this.fb_button.Name = "fb_button";
             this.fb_button.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
             this.fb_button.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
@@ -263,7 +302,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label9.Location = new System.Drawing.Point(523, 1584);
+            this.label9.Location = new System.Drawing.Point(514, 2096);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(206, 30);
             this.label9.TabIndex = 62;
@@ -275,9 +314,9 @@
             this.gunaCirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(597, 1985);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(589, 2552);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(50, 72);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaCirclePictureBox1.TabIndex = 61;
             this.gunaCirclePictureBox1.TabStop = false;
@@ -353,112 +392,12 @@
             this.label7.Text = "Quran and Hadith Section  ";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // login_button
-            // 
-            this.login_button.Animated = true;
-            this.login_button.AnimationHoverSpeed = 0.07F;
-            this.login_button.AnimationSpeed = 0.03F;
-            this.login_button.BackColor = System.Drawing.Color.Transparent;
-            this.login_button.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.login_button.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.login_button.BorderColor = System.Drawing.Color.Black;
-            this.login_button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.login_button.FocusedColor = System.Drawing.Color.Empty;
-            this.login_button.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
-            this.login_button.Image = null;
-            this.login_button.ImageSize = new System.Drawing.Size(52, 52);
-            this.login_button.Location = new System.Drawing.Point(164, 202);
-            this.login_button.Name = "login_button";
-            this.login_button.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
-            this.login_button.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
-            this.login_button.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.login_button.OnHoverForeColor = System.Drawing.Color.White;
-            this.login_button.OnHoverImage = null;
-            this.login_button.OnPressedColor = System.Drawing.Color.Black;
-            this.login_button.Radius = 10;
-            this.login_button.Size = new System.Drawing.Size(256, 48);
-            this.login_button.TabIndex = 37;
-            this.login_button.Text = "Donate";
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label5.Location = new System.Drawing.Point(132, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(241, 30);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Donation";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // donation_amount_textbox
-            // 
-            this.donation_amount_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.donation_amount_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.donation_amount_textbox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.donation_amount_textbox.Location = new System.Drawing.Point(169, 142);
-            this.donation_amount_textbox.Name = "donation_amount_textbox";
-            this.donation_amount_textbox.Size = new System.Drawing.Size(256, 31);
-            this.donation_amount_textbox.TabIndex = 35;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.panel3.Location = new System.Drawing.Point(164, 172);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(256, 1);
-            this.panel3.TabIndex = 34;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label4.Location = new System.Drawing.Point(76, 143);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 30);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "Amount:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label3.Location = new System.Drawing.Point(7, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 30);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "Bank Account No:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // donation_bank_account_no_textbox
-            // 
-            this.donation_bank_account_no_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.donation_bank_account_no_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.donation_bank_account_no_textbox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.donation_bank_account_no_textbox.Location = new System.Drawing.Point(168, 89);
-            this.donation_bank_account_no_textbox.Name = "donation_bank_account_no_textbox";
-            this.donation_bank_account_no_textbox.Size = new System.Drawing.Size(257, 31);
-            this.donation_bank_account_no_textbox.TabIndex = 31;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.panel2.Location = new System.Drawing.Point(164, 118);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(256, 1);
-            this.panel2.TabIndex = 30;
-            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            this.label1.Location = new System.Drawing.Point(593, 16);
+            this.label1.Location = new System.Drawing.Point(446, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(241, 30);
             this.label1.TabIndex = 29;
@@ -720,6 +659,106 @@
             this.gunaCirclePictureBox2.TabStop = false;
             this.gunaCirclePictureBox2.UseTransfarantBackground = false;
             // 
+            // login_button
+            // 
+            this.login_button.Animated = true;
+            this.login_button.AnimationHoverSpeed = 0.07F;
+            this.login_button.AnimationSpeed = 0.03F;
+            this.login_button.BackColor = System.Drawing.Color.Transparent;
+            this.login_button.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
+            this.login_button.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
+            this.login_button.BorderColor = System.Drawing.Color.Black;
+            this.login_button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.login_button.FocusedColor = System.Drawing.Color.Empty;
+            this.login_button.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
+            this.login_button.Image = null;
+            this.login_button.ImageSize = new System.Drawing.Size(52, 52);
+            this.login_button.Location = new System.Drawing.Point(703, 1135);
+            this.login_button.Name = "login_button";
+            this.login_button.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
+            this.login_button.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(196)))), ((int)(((byte)(141)))));
+            this.login_button.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.login_button.OnHoverForeColor = System.Drawing.Color.White;
+            this.login_button.OnHoverImage = null;
+            this.login_button.OnPressedColor = System.Drawing.Color.Black;
+            this.login_button.Radius = 10;
+            this.login_button.Size = new System.Drawing.Size(256, 48);
+            this.login_button.TabIndex = 121;
+            this.login_button.Text = "Donate";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
+            this.label5.Location = new System.Drawing.Point(718, 945);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(241, 30);
+            this.label5.TabIndex = 120;
+            this.label5.Text = "Donation";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // donation_amount_textbox
+            // 
+            this.donation_amount_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.donation_amount_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.donation_amount_textbox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.donation_amount_textbox.Location = new System.Drawing.Point(729, 1071);
+            this.donation_amount_textbox.Name = "donation_amount_textbox";
+            this.donation_amount_textbox.Size = new System.Drawing.Size(256, 31);
+            this.donation_amount_textbox.TabIndex = 119;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.panel3.Location = new System.Drawing.Point(724, 1101);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(256, 1);
+            this.panel3.TabIndex = 118;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
+            this.label4.Location = new System.Drawing.Point(636, 1072);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 30);
+            this.label4.TabIndex = 117;
+            this.label4.Text = "Amount:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
+            this.label3.Location = new System.Drawing.Point(567, 1018);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(151, 30);
+            this.label3.TabIndex = 116;
+            this.label3.Text = "Bank Account No:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // donation_bank_account_no_textbox
+            // 
+            this.donation_bank_account_no_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.donation_bank_account_no_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.donation_bank_account_no_textbox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.donation_bank_account_no_textbox.Location = new System.Drawing.Point(728, 1018);
+            this.donation_bank_account_no_textbox.Name = "donation_bank_account_no_textbox";
+            this.donation_bank_account_no_textbox.Size = new System.Drawing.Size(257, 31);
+            this.donation_bank_account_no_textbox.TabIndex = 115;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.panel2.Location = new System.Drawing.Point(724, 1047);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(256, 1);
+            this.panel2.TabIndex = 114;
+            // 
             // UC_iutsiks_st_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -748,14 +787,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox donation_bank_account_no_textbox;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox donation_amount_textbox;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI.WinForms.GunaGradientTileButton login_button;
         private System.Windows.Forms.Label label6;
         private Guna.UI.WinForms.GunaGradientTileButton Read_Hadith_Button;
         private Guna.UI.WinForms.GunaGradientTileButton Read_Quran_Button;
@@ -787,5 +818,13 @@
         private System.Windows.Forms.TextBox txt_msg;
         private System.Windows.Forms.DataGridView dgw_chat_SIKS;
         private System.Windows.Forms.Label label16;
+        private Guna.UI.WinForms.GunaGradientTileButton login_button;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox donation_amount_textbox;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox donation_bank_account_no_textbox;
+        private System.Windows.Forms.Panel panel2;
     }
 }

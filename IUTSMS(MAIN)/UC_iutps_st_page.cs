@@ -124,6 +124,7 @@ namespace IUTSMS_MAIN_
 
                 getDiscuss();
 
+                txt_msg.Text = "";
 
 
 
