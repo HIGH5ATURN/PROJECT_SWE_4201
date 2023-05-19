@@ -193,5 +193,129 @@ namespace IUTSMS_MAIN_
         
         
         }
+
+        private void dgw_members_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_EID.Text = dgw_members.CurrentRow.Cells[0].Value.ToString();
+
+            txt_name.Text = dgw_members.CurrentRow.Cells[1].Value.ToString();
+
+            txt_st_id.Text = dgw_members.CurrentRow.Cells[2].Value.ToString();
+
+            txt_dept.Text = dgw_members.CurrentRow.Cells[3].Value.ToString();
+        }
+
+        private void btn_remove_member_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                string query = "DELETE FROM cs_table where EID= @eid ";
+
+
+
+                cmd = new OleDbCommand(query, conn);
+
+
+                cmd.Parameters.AddWithValue("@eid",Convert.ToInt32( txt_EID.Text));
+
+
+
+                conn.Open();
+
+
+                cmd.ExecuteNonQuery();
+
+
+                conn.Close();
+
+
+                MessageBox.Show("Member Removed!");
+
+
+                IUTCS iutcs = new IUTCS();
+                
+                iutcs.fill_arr();
+               
+                fillmember();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                DataView dv = dt1.DefaultView;
+
+                dv.RowFilter = "naam LIKE'%" + textBox1.Text + "%'";
+
+                dgw_members.DataSource = dv;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        //to move the Form
+
+        private bool dragg = false;
+
+        private Point StartPoint = new Point(0, 0);
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragg= true;
+            StartPoint = new Point(e.X, e.Y);
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+
+            dragg= false;
+
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragg)
+            {
+
+                Point p = PointToScreen(e.Location);
+
+                Location = new Point(p.X - this.StartPoint.X, p.Y - this.StartPoint.Y);
+
+            }
+        }
+
+        private void CS_admin_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragg = true;
+            StartPoint = new Point(e.X, e.Y);
+        }
+
+        private void CS_admin_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragg)
+            {
+
+                Point p = PointToScreen(e.Location);
+
+                Location = new Point(p.X - this.StartPoint.X, p.Y - this.StartPoint.Y);
+
+            }
+        }
+
+        private void CS_admin_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragg = false;
+        }
     }
 }

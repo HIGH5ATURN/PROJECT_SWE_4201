@@ -200,5 +200,71 @@ namespace IUTSMS_MAIN_
         {
             txt_notice_no.Text = dgwNotices.CurrentRow.Cells[0].Value.ToString();
         }
+
+        private void dgw_members_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+
+            txt_EID.Text = dgw_members.CurrentRow.Cells[0].Value.ToString();
+
+            txt_name.Text = dgw_members.CurrentRow.Cells[1].Value.ToString();
+
+            txt_st_id.Text = dgw_members.CurrentRow.Cells[2].Value.ToString();
+
+            txt_dept.Text = dgw_members.CurrentRow.Cells[3].Value.ToString();
+        }
+
+        private void btn_remove_member_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+
+                string query = "DELETE FROM ds_table where EID= @eid ";
+
+
+
+
+
+                cmd = new OleDbCommand(query, conn);
+
+
+
+                cmd.Parameters.AddWithValue("@eid", Convert.ToInt32(txt_EID.Text));
+
+
+
+                conn.Open();
+
+
+                cmd.ExecuteNonQuery();
+
+
+                conn.Close();
+
+
+                MessageBox.Show("Member Removed!");
+
+
+
+                IUTDS iutds = new IUTDS();
+
+                
+                
+                iutds.fill_arr();
+
+                
+                
+                fillmember();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            
+            }
+        }
     }
 }
