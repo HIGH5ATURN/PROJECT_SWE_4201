@@ -283,5 +283,98 @@ namespace IUTSMS_MAIN_
             
             }
         }
+
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                DataView dv = dt1.DefaultView;
+
+
+                dv.RowFilter = "naam LIKE'%" + txt_search.Text + "%'";
+
+
+                dgw_members.DataSource = dv;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+
+            }
+        }
+
+
+        //to move the form
+
+        private bool dragg = false;
+
+        private Point StartPoint = new Point(0, 0);
+
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            dragg = true;
+
+            StartPoint = new Point(e.X, e.Y);
+
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragg)
+            {
+
+                Point p = PointToScreen(e.Location);
+
+                Location = new Point(p.X - this.StartPoint.X, p.Y - this.StartPoint.Y);
+
+            }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+
+            dragg = false;
+
+
+        }
+
+        private void SIKS_admin_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            dragg = true;
+
+            StartPoint = new Point(e.X, e.Y);
+
+        }
+
+        private void SIKS_admin_MouseMove(object sender, MouseEventArgs e)
+        {
+
+            if (dragg)
+            {
+
+                Point p = PointToScreen(e.Location);
+
+                Location = new Point(p.X - this.StartPoint.X, p.Y - this.StartPoint.Y);
+
+            }
+
+        }
+
+        private void SIKS_admin_MouseUp(object sender, MouseEventArgs e)
+        {
+
+            dragg = false;
+
+
+        }
     }
 }

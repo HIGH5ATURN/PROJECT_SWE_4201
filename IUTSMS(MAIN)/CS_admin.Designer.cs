@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CS_admin));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -143,29 +143,29 @@
             this.dgw_members.AllowUserToDeleteRows = false;
             this.dgw_members.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgw_members.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgw_members.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw_members.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgw_members.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgw_members.Location = new System.Drawing.Point(70, 853);
             this.dgw_members.Name = "dgw_members";
             this.dgw_members.ReadOnly = true;
             this.dgw_members.RowHeadersVisible = false;
             this.dgw_members.RowHeadersWidth = 51;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.Control;
-            this.dgw_members.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control;
+            this.dgw_members.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgw_members.RowTemplate.Height = 50;
             this.dgw_members.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw_members.Size = new System.Drawing.Size(956, 527);
+            this.dgw_members.Size = new System.Drawing.Size(1018, 527);
             this.dgw_members.TabIndex = 100;
             this.dgw_members.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_members_CellEnter);
             // 
@@ -275,26 +275,26 @@
             this.dgwNotices.AllowUserToDeleteRows = false;
             this.dgwNotices.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwNotices.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgwNotices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgwNotices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgwNotices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwNotices.Location = new System.Drawing.Point(745, 172);
             this.dgwNotices.Name = "dgwNotices";
             this.dgwNotices.ReadOnly = true;
             this.dgwNotices.RowHeadersVisible = false;
             this.dgwNotices.RowHeadersWidth = 51;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.Control;
-            this.dgwNotices.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Control;
+            this.dgwNotices.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgwNotices.RowTemplate.Height = 50;
             this.dgwNotices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgwNotices.Size = new System.Drawing.Size(710, 409);
@@ -400,7 +400,7 @@
             this.btn_remove_member.ForeColor = System.Drawing.Color.White;
             this.btn_remove_member.Image = null;
             this.btn_remove_member.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_remove_member.Location = new System.Drawing.Point(1132, 1271);
+            this.btn_remove_member.Location = new System.Drawing.Point(1145, 1316);
             this.btn_remove_member.Name = "btn_remove_member";
             this.btn_remove_member.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
             this.btn_remove_member.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
@@ -418,7 +418,7 @@
             // 
             this.txt_EID.Enabled = false;
             this.txt_EID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_EID.Location = new System.Drawing.Point(1132, 922);
+            this.txt_EID.Location = new System.Drawing.Point(1145, 967);
             this.txt_EID.Name = "txt_EID";
             this.txt_EID.Size = new System.Drawing.Size(248, 34);
             this.txt_EID.TabIndex = 103;
@@ -428,7 +428,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.label5.Location = new System.Drawing.Point(1127, 882);
+            this.label5.Location = new System.Drawing.Point(1140, 927);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 28);
             this.label5.TabIndex = 102;
@@ -438,7 +438,7 @@
             // 
             this.txt_name.Enabled = false;
             this.txt_name.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_name.Location = new System.Drawing.Point(1132, 1014);
+            this.txt_name.Location = new System.Drawing.Point(1145, 1059);
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(248, 34);
             this.txt_name.TabIndex = 105;
@@ -448,7 +448,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.label6.Location = new System.Drawing.Point(1127, 974);
+            this.label6.Location = new System.Drawing.Point(1140, 1019);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 28);
             this.label6.TabIndex = 104;
@@ -458,7 +458,7 @@
             // 
             this.txt_st_id.Enabled = false;
             this.txt_st_id.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_st_id.Location = new System.Drawing.Point(1132, 1107);
+            this.txt_st_id.Location = new System.Drawing.Point(1145, 1152);
             this.txt_st_id.Name = "txt_st_id";
             this.txt_st_id.Size = new System.Drawing.Size(248, 34);
             this.txt_st_id.TabIndex = 107;
@@ -468,7 +468,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.label7.Location = new System.Drawing.Point(1127, 1067);
+            this.label7.Location = new System.Drawing.Point(1140, 1112);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(108, 28);
             this.label7.TabIndex = 106;
@@ -478,7 +478,7 @@
             // 
             this.txt_dept.Enabled = false;
             this.txt_dept.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dept.Location = new System.Drawing.Point(1132, 1208);
+            this.txt_dept.Location = new System.Drawing.Point(1145, 1253);
             this.txt_dept.Name = "txt_dept";
             this.txt_dept.Size = new System.Drawing.Size(248, 34);
             this.txt_dept.TabIndex = 109;
@@ -488,7 +488,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.label8.Location = new System.Drawing.Point(1127, 1168);
+            this.label8.Location = new System.Drawing.Point(1140, 1213);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(121, 28);
             this.label8.TabIndex = 108;
