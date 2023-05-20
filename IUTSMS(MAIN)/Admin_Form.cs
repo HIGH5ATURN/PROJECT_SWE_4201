@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -56,58 +57,138 @@ namespace IUTSMS_MAIN_
             new Form1().Show();
         }
 
+        OleDbConnection conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
+
+        OleDbCommand cmd = new OleDbCommand();
         private void login_button_Click(object sender, EventArgs e)
         {
             try
             {
                 if (admin_login_combobox.Text == "IUTCS")
                 {
-                    if (login_u_id_textBox.Text == "admincs" && login_pass_textBox.Text == "passcs")
+                    try
                     {
-                        new CS_admin().Show();
-                        this.Hide();
+                        conn.Close();
+                        conn.Open();
+
+
+                        string t = "SELECT * FROM cs_admin where username ='" + login_u_id_textBox.Text + "' and pass ='" + login_pass_textBox.Text + "'";
+
+                        cmd = new OleDbCommand(t, conn);
+                        OleDbDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            //when password matched-->
+                            new CS_admin().Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password,Please Try again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        conn.Close();
+
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        throw new Exception("Invalid Username or password!");
+                        MessageBox.Show(ex.Message);
                     }
                 }
 
                 else if (admin_login_combobox.Text == "IUTPS")
                 {
-                    if (login_u_id_textBox.Text == "adminps" && login_pass_textBox.Text == "passps")
+                    try
                     {
-                        new PS_admin().Show();
-                        this.Hide();
+                        conn.Close();
+                        conn.Open();
+
+
+                        string t = "SELECT * FROM ps_admin where username ='" + login_u_id_textBox.Text + "' and pass ='" + login_pass_textBox.Text + "'";
+
+                        cmd = new OleDbCommand(t, conn);
+                        OleDbDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            //when password matched-->
+                            new PS_admin().Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password,Please Try again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        conn.Close();
+
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        throw new Exception("Invalid Username or password!");
+                        MessageBox.Show(ex.Message);
                     }
                 }
                 else if (admin_login_combobox.Text == "IUTSIKS")
                 {
-                    if (login_u_id_textBox.Text == "adminsiks" && login_pass_textBox.Text == "passsiks")
+                    try
                     {
-                        new SIKS_admin().Show();
-                        this.Hide();
+                        conn.Close();
+                        conn.Open();
+
+
+                        string t = "SELECT * FROM siks_admin where username ='" + login_u_id_textBox.Text + "' and pass ='" + login_pass_textBox.Text + "'";
+
+                        cmd = new OleDbCommand(t, conn);
+                        OleDbDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            //when password matched-->
+                            new SIKS_admin().Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password,Please Try again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        conn.Close();
+
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        throw new Exception("Invalid Username or password!");
+                        MessageBox.Show(ex.Message);
                     }
                 }
                 else if (admin_login_combobox.Text == "IUTDS")
                 {
-                    if (login_u_id_textBox.Text == "adminds" && login_pass_textBox.Text == "passds")
+                    try
                     {
-                        new DS_admin().Show();
-                        this.Hide();
+                        conn.Close();
+                        conn.Open();
+
+
+                        string t = "SELECT * FROM ds_admin where username ='" + login_u_id_textBox.Text + "' and pass ='" + login_pass_textBox.Text + "'";
+
+                        cmd = new OleDbCommand(t, conn);
+                        OleDbDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            //when password matched-->
+                            new DS_admin().Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password,Please Try again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        conn.Close();
+
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        throw new Exception("Invalid Username or password!");
+                        MessageBox.Show(ex.Message);
                     }
+
                 }
             }
             catch(Exception ex)

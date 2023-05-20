@@ -376,5 +376,40 @@ namespace IUTSMS_MAIN_
 
 
         }
+
+        private void btn_changePass_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+
+
+                string t = "Update siks_admin SET pass=@password where username='" + "adminsiks" + "'";
+
+
+                cmd = new OleDbCommand(t, conn);
+
+
+                cmd.Parameters.AddWithValue("@password", txt_new_pass.Text);
+
+
+                cmd.ExecuteNonQuery();
+
+
+                MessageBox.Show("Password Updated Successfully!");
+
+                this.Hide();
+                new Admin_Form().Show();
+
+                txt_new_pass.Text = "";
+
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
