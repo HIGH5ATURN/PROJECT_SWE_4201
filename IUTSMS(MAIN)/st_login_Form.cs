@@ -99,5 +99,14 @@ namespace IUTSMS_MAIN_
         {
             id = login_u_id_textBox.Text;
         }
+
+        private void admin_back_Button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            
+            new Form1().Show();
+
+        }
     }
 }

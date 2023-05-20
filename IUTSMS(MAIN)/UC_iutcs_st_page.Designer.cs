@@ -138,7 +138,7 @@
             this.gunaCirclePictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox3.BaseColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox3.Image")));
-            this.gunaCirclePictureBox3.Location = new System.Drawing.Point(610, 581);
+            this.gunaCirclePictureBox3.Location = new System.Drawing.Point(613, 581);
             this.gunaCirclePictureBox3.Name = "gunaCirclePictureBox3";
             this.gunaCirclePictureBox3.Size = new System.Drawing.Size(350, 350);
             this.gunaCirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -154,10 +154,9 @@ namespace IUTSMS_MAIN_
         }
         private void SORA_Student_button_Click(object sender, EventArgs e)
         {
-            th = new Thread(openform_student);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-            this.Close();
+            this.Hide();
+
+            new st_login_Form().Show();
         }
 
         private void form1_logo_panel_Paint(object sender, PaintEventArgs e)
@@ -168,6 +167,16 @@ namespace IUTSMS_MAIN_
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaGradientCircleButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaGradientCircleButton5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.iutoic-dhaka.edu/");
         }
     }
 }

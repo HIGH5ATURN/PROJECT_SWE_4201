@@ -208,5 +208,10 @@ namespace IUTSMS_MAIN_
                 login_pass_textBox.UseSystemPasswordChar = true;
             }
         }
+
+        private void link_label_note_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new pass_info().Show();
+        }
     }
 }
