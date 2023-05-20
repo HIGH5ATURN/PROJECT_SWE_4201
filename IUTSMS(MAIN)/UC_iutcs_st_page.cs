@@ -160,8 +160,8 @@ namespace IUTSMS_MAIN_
             System.Diagnostics.Process.Start("https://www.facebook.com/IUTCS");
         }
 
-        OleDbDataAdapter adapter = new OleDbDataAdapter();
-        DataTable dt;
+
+
         void getDiscuss()
         {
             conn.Close();
@@ -180,11 +180,11 @@ namespace IUTSMS_MAIN_
 
                 while(dr.Read())
                 {
-                    int n = dgw_chat_CS.Rows.Add();
+                    int n = dgw_chat.Rows.Add();
                    
-                    dgw_chat_CS.Rows[n].Cells[0].Value= dr["naam"].ToString();
+                    dgw_chat.Rows[n].Cells[0].Value= dr["naam"].ToString();
 
-                    dgw_chat_CS.Rows[n].Cells[1].Value = dr["message"].ToString();
+                    dgw_chat.Rows[n].Cells[1].Value = dr["message"].ToString();
                 }
 
 

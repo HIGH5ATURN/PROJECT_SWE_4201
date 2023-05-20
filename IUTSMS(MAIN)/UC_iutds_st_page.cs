@@ -35,38 +35,37 @@ namespace IUTSMS_MAIN_
         
 
         DataTable dt1;
-       
+
         void getDiscuss()
         {
             conn.Close();
             try
             {
+
                 conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
 
 
-                dt1 = new DataTable();
 
-                
-                adapter1 = new OleDbDataAdapter("SELECT * FROM ds_discuss", conn);
+                string f = "SELECT * FROM ds_discuss";
 
+                cmd = new OleDbCommand(f, conn);
 
-                
                 conn.Open();
+                OleDbDataReader dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    int n = dgw_chat.Rows.Add();
+
+                    dgw_chat.Rows[n].Cells[0].Value = dr["naam"].ToString();
+
+                    dgw_chat.Rows[n].Cells[1].Value = dr["message"].ToString();
+                }
 
 
-                
-                adapter1.Fill(dt1);
 
-
-                
-                dgw_chat_DS.DataSource = dt1;
-
-
-                
                 conn.Close();
-            
             }
-
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
