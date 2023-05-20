@@ -40,7 +40,7 @@ namespace IUTSMS_MAIN_
 
                 conn.Open();
                 OleDbDataReader dr = cmd.ExecuteReader();
-
+                dgw_chat.Rows.Clear();
                 while (dr.Read())
                 {
                     int n = dgw_chat.Rows.Add();

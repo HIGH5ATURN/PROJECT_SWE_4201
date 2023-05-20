@@ -42,6 +42,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.login_u_id_textBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.admin_back_Button = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -231,11 +232,45 @@
             this.panel2.Size = new System.Drawing.Size(373, 1);
             this.panel2.TabIndex = 21;
             // 
+            // admin_back_Button
+            // 
+            this.admin_back_Button.Animated = true;
+            this.admin_back_Button.AnimationHoverSpeed = 0.07F;
+            this.admin_back_Button.AnimationSpeed = 0.03F;
+            this.admin_back_Button.BaseColor = System.Drawing.SystemColors.Control;
+            this.admin_back_Button.BorderColor = System.Drawing.Color.Black;
+            this.admin_back_Button.BorderSize = 1;
+            this.admin_back_Button.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.admin_back_Button.CheckedBorderColor = System.Drawing.Color.Black;
+            this.admin_back_Button.CheckedForeColor = System.Drawing.Color.White;
+            this.admin_back_Button.CheckedImage = null;
+            this.admin_back_Button.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.admin_back_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.admin_back_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.admin_back_Button.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin_back_Button.ForeColor = System.Drawing.Color.Black;
+            this.admin_back_Button.Image = null;
+            this.admin_back_Button.ImageSize = new System.Drawing.Size(52, 52);
+            this.admin_back_Button.LineColor = System.Drawing.Color.Red;
+            this.admin_back_Button.Location = new System.Drawing.Point(-1, 56);
+            this.admin_back_Button.Name = "admin_back_Button";
+            this.admin_back_Button.OnHoverBaseColor = System.Drawing.Color.DarkRed;
+            this.admin_back_Button.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.admin_back_Button.OnHoverForeColor = System.Drawing.Color.White;
+            this.admin_back_Button.OnHoverImage = null;
+            this.admin_back_Button.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.admin_back_Button.OnPressedColor = System.Drawing.Color.Black;
+            this.admin_back_Button.Size = new System.Drawing.Size(76, 37);
+            this.admin_back_Button.TabIndex = 26;
+            this.admin_back_Button.Text = "Go back";
+            this.admin_back_Button.Click += new System.EventHandler(this.admin_back_Button_Click);
+            // 
             // st_login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(496, 800);
+            this.Controls.Add(this.admin_back_Button);
             this.Controls.Add(this.login_pass_textBox);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.checkBox1);
@@ -275,5 +310,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox login_u_id_textBox;
         private System.Windows.Forms.Panel panel2;
+        private Guna.UI.WinForms.GunaAdvenceTileButton admin_back_Button;
     }
 }

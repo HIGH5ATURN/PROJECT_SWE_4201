@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Form));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.admin_login_combobox = new Guna.UI.WinForms.GunaComboBox();
@@ -45,11 +46,11 @@
             this.login_button = new Guna.UI.WinForms.GunaGradientTileButton();
             this.login_u_id_textBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.admin_back_Button = new Guna.UI.WinForms.GunaAdvenceTileButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.link_label_note = new Guna.UI.WinForms.GunaLinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -61,6 +62,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.link_label_note);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.gunaPictureBox2);
             this.panel1.Controls.Add(this.gunaPictureBox1);
@@ -77,6 +79,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1499, 839);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.label2.Location = new System.Drawing.Point(1013, 199);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(193, 71);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "LOGIN\r\n";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gunaPictureBox2
             // 
@@ -256,17 +270,15 @@
             this.panel2.Size = new System.Drawing.Size(373, 1);
             this.panel2.TabIndex = 18;
             // 
-            // label2
+            // pictureBox3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.label2.Location = new System.Drawing.Point(1013, 199);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 71);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "LOGIN\r\n";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(988, 15);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(282, 181);
+            this.pictureBox3.TabIndex = 27;
+            this.pictureBox3.TabStop = false;
             // 
             // gunaControlBox2
             // 
@@ -335,15 +347,19 @@
             this.admin_back_Button.Text = "Go back";
             this.admin_back_Button.Click += new System.EventHandler(this.admin_back_Button_Click);
             // 
-            // pictureBox3
+            // link_label_note
             // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(988, 15);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(282, 181);
-            this.pictureBox3.TabIndex = 27;
-            this.pictureBox3.TabStop = false;
+            this.link_label_note.AutoSize = true;
+            this.link_label_note.BackColor = System.Drawing.SystemColors.Control;
+            this.link_label_note.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.link_label_note.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.link_label_note.Location = new System.Drawing.Point(611, 15);
+            this.link_label_note.Name = "link_label_note";
+            this.link_label_note.Size = new System.Drawing.Size(78, 35);
+            this.link_label_note.TabIndex = 28;
+            this.link_label_note.TabStop = true;
+            this.link_label_note.Text = "NOTE";
+            this.link_label_note.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_label_note_LinkClicked);
             // 
             // Admin_Form
             // 
@@ -399,5 +415,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private Guna.UI.WinForms.GunaLinkLabel link_label_note;
     }
 }

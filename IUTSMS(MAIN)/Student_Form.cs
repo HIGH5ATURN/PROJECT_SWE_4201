@@ -129,6 +129,14 @@ namespace IUTSMS_MAIN_
 
                         MessageBox.Show("You've Registered in the System Successfully!");
 
+                        this.Hide();
+
+                        new st_login_Form().Show();
+
+                        st_reg_name_textbox.Clear();
+                        st_reg_id_textbox.Clear();
+                        st_reg_pass_TextBox.Clear();
+                        st_reg_conf_pass_textbox.Clear();
 
                     }
                     catch (Exception ex)
