@@ -54,6 +54,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgwNotices = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.message = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgw_chat_CS)).BeginInit();
@@ -183,7 +185,6 @@
             // 
             // dgw_chat_CS
             // 
-            this.dgw_chat_CS.AllowUserToAddRows = false;
             this.dgw_chat_CS.AllowUserToDeleteRows = false;
             this.dgw_chat_CS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgw_chat_CS.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -196,6 +197,9 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgw_chat_CS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgw_chat_CS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgw_chat_CS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.name,
+            this.message});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -499,6 +503,23 @@
             this.label1.Text = "Notice Board";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // name
+            // 
+            this.name.FillWeight = 53.47594F;
+            this.name.HeaderText = "Name";
+            this.name.MinimumWidth = 3;
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // message
+            // 
+            this.message.FillWeight = 146.5241F;
+            this.message.HeaderText = "Message";
+            this.message.MinimumWidth = 6;
+            this.message.Name = "message";
+            this.message.ReadOnly = true;
+            // 
             // UC_iutcs_st_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -541,5 +562,7 @@
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox3;
         private System.Windows.Forms.Label label6;
         private Guna.UI.WinForms.GunaGradientTileButton btn_play_snake;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn message;
     }
 }
