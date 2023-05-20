@@ -119,22 +119,34 @@ namespace IUTSMS_MAIN_
 
         OleDbDataAdapter adapter1 = new OleDbDataAdapter();
         DataTable dt1;
+
         void getDiscuss()
         {
             conn.Close();
             try
             {
+
                 conn = new OleDbConnection("Provider=Microsoft.ACE.OleDb.16.0; Data Source =dbst.accdb");
 
-                dt1 = new DataTable();
 
-                adapter1 = new OleDbDataAdapter("SELECT * FROM siks_discuss", conn);
+
+                string f = "SELECT * FROM siks_discuss";
+
+                cmd = new OleDbCommand(f, conn);
 
                 conn.Open();
+                OleDbDataReader dr = cmd.ExecuteReader();
 
-                adapter1.Fill(dt1);
+                while (dr.Read())
+                {
+                    int n = dgw_chat.Rows.Add();
 
-                dgw_chat_SIKS.DataSource = dt1;
+                    dgw_chat.Rows[n].Cells[0].Value = dr["naam"].ToString();
+
+                    dgw_chat.Rows[n].Cells[1].Value = dr["message"].ToString();
+                }
+
+
 
                 conn.Close();
             }

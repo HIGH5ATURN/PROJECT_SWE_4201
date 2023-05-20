@@ -39,7 +39,9 @@
             this.gunaCirclePictureBox3 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.btn_send_msg = new Guna.UI.WinForms.GunaGradientTileButton();
             this.txt_msg = new System.Windows.Forms.TextBox();
-            this.dgw_chat_CS = new System.Windows.Forms.DataGridView();
+            this.dgw_chat = new System.Windows.Forms.DataGridView();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.message = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.fb_button = new Guna.UI.WinForms.GunaGradientTileButton();
             this.label9 = new System.Windows.Forms.Label();
@@ -54,11 +56,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgwNotices = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.message = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgw_chat_CS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_chat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwNotices)).BeginInit();
@@ -72,7 +72,7 @@
             this.panel1.Controls.Add(this.gunaCirclePictureBox3);
             this.panel1.Controls.Add(this.btn_send_msg);
             this.panel1.Controls.Add(this.txt_msg);
-            this.panel1.Controls.Add(this.dgw_chat_CS);
+            this.panel1.Controls.Add(this.dgw_chat);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.fb_button);
             this.panel1.Controls.Add(this.label9);
@@ -183,11 +183,11 @@
             this.txt_msg.Size = new System.Drawing.Size(830, 132);
             this.txt_msg.TabIndex = 100;
             // 
-            // dgw_chat_CS
+            // dgw_chat
             // 
-            this.dgw_chat_CS.AllowUserToDeleteRows = false;
-            this.dgw_chat_CS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgw_chat_CS.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgw_chat.AllowUserToDeleteRows = false;
+            this.dgw_chat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgw_chat.BackgroundColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,9 +195,9 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgw_chat_CS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgw_chat_CS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgw_chat_CS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgw_chat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgw_chat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgw_chat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.name,
             this.message});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -207,16 +207,33 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgw_chat_CS.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgw_chat_CS.Location = new System.Drawing.Point(58, 1063);
-            this.dgw_chat_CS.Name = "dgw_chat_CS";
-            this.dgw_chat_CS.ReadOnly = true;
-            this.dgw_chat_CS.RowHeadersVisible = false;
-            this.dgw_chat_CS.RowHeadersWidth = 51;
-            this.dgw_chat_CS.RowTemplate.Height = 50;
-            this.dgw_chat_CS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw_chat_CS.Size = new System.Drawing.Size(830, 206);
-            this.dgw_chat_CS.TabIndex = 99;
+            this.dgw_chat.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgw_chat.Location = new System.Drawing.Point(58, 1063);
+            this.dgw_chat.Name = "dgw_chat";
+            this.dgw_chat.ReadOnly = true;
+            this.dgw_chat.RowHeadersVisible = false;
+            this.dgw_chat.RowHeadersWidth = 51;
+            this.dgw_chat.RowTemplate.Height = 50;
+            this.dgw_chat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgw_chat.Size = new System.Drawing.Size(830, 206);
+            this.dgw_chat.TabIndex = 99;
+            // 
+            // name
+            // 
+            this.name.FillWeight = 53.47594F;
+            this.name.HeaderText = "Name";
+            this.name.MinimumWidth = 3;
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // message
+            // 
+            this.message.FillWeight = 146.5241F;
+            this.message.HeaderText = "Message";
+            this.message.MinimumWidth = 6;
+            this.message.Name = "message";
+            this.message.ReadOnly = true;
             // 
             // label4
             // 
@@ -503,23 +520,6 @@
             this.label1.Text = "Notice Board";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // name
-            // 
-            this.name.FillWeight = 53.47594F;
-            this.name.HeaderText = "Name";
-            this.name.MinimumWidth = 3;
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            this.name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // message
-            // 
-            this.message.FillWeight = 146.5241F;
-            this.message.HeaderText = "Message";
-            this.message.MinimumWidth = 6;
-            this.message.Name = "message";
-            this.message.ReadOnly = true;
-            // 
             // UC_iutcs_st_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -531,7 +531,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgw_chat_CS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_chat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwNotices)).EndInit();
@@ -557,7 +557,7 @@
         private System.Windows.Forms.Label label9;
         private Guna.UI.WinForms.GunaGradientTileButton btn_send_msg;
         private System.Windows.Forms.TextBox txt_msg;
-        private System.Windows.Forms.DataGridView dgw_chat_CS;
+        private System.Windows.Forms.DataGridView dgw_chat;
         private System.Windows.Forms.Label label4;
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox3;
         private System.Windows.Forms.Label label6;
