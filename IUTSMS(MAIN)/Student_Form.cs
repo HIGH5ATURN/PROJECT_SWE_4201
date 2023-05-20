@@ -99,47 +99,54 @@ namespace IUTSMS_MAIN_
         OleDbDataAdapter da = new OleDbDataAdapter();
         private void register_button_Click(object sender, EventArgs e)
         {
-            if (st_reg_pass_TextBox.Text == st_reg_conf_pass_textbox.Text)
+            if (st_reg_name_textbox.Text != "" && st_reg_id_textbox.Text != "" && st_reg_pass_TextBox.Text != "" && st_reg_ComboBox.Text != "")
             {
-
-                try
+                if (st_reg_pass_TextBox.Text == st_reg_conf_pass_textbox.Text)
                 {
 
+                    try
+                    {
 
-                    conn.Open();
+
+                        conn.Open();
 
 
-                    string t = "INSERT INTO st_info (naam, st_id,dept,passu) VALUES" + "(@name,@id,@dp,@pass)";
+                        string t = "INSERT INTO st_info (naam, st_id,dept,passu) VALUES" + "(@name,@id,@dp,@pass)";
 
-                    cmd = new OleDbCommand(t, conn);
+                        cmd = new OleDbCommand(t, conn);
 
-                    cmd.Parameters.AddWithValue("@name", st_reg_name_textbox.Text);
-                    cmd.Parameters.AddWithValue("@id", st_reg_id_textbox.Text);
-                    cmd.Parameters.AddWithValue("@dp", st_reg_ComboBox.Text);
-                    cmd.Parameters.AddWithValue("@pass", st_reg_pass_TextBox.Text);
+                        cmd.Parameters.AddWithValue("@name", st_reg_name_textbox.Text);
+                        cmd.Parameters.AddWithValue("@id", st_reg_id_textbox.Text);
+                        cmd.Parameters.AddWithValue("@dp", st_reg_ComboBox.Text);
+                        cmd.Parameters.AddWithValue("@pass", st_reg_pass_TextBox.Text);
 
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
+                        cmd.ExecuteNonQuery();
+                        conn.Close();
 
-                    Form1 f1 = new Form1();
+                        Form1 f1 = new Form1();
 
-                    f1.fill_regst_list();
+                        f1.fill_regst_list();
 
-                    MessageBox.Show("You've Registered in the System Successfully!");
+                        MessageBox.Show("You've Registered in the System Successfully!");
 
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
 
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Password mismatch!");
+                    st_reg_conf_pass_textbox.Clear();
+                    st_reg_pass_TextBox.Clear();
                 }
-
             }
             else
             {
-                MessageBox.Show("Password mismatch!");
-                st_reg_conf_pass_textbox.Clear();
-                st_reg_pass_TextBox.Clear();
+                MessageBox.Show("Fill all the area!");
             }
         }
        
