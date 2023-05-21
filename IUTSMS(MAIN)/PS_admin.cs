@@ -154,38 +154,41 @@ namespace IUTSMS_MAIN_
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            try
+            if (txt_notice_no.Text != "NO NOTICE")
             {
+                try
+                {
 
-                string query = "DELETE FROM ps_notice where ID=@id";
+                    string query = "DELETE FROM ps_notice where ID=@id";
 
-             
-                
-                cmd = new OleDbCommand(query, conn);
 
-                
-                
-                cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_notice_no.Text));
 
-                
-                conn.Open();
-                
-                
-                cmd.ExecuteNonQuery();
-                
-                
-                conn.Close();
-                
-                
-                MessageBox.Show("Notice Deleted!");
-                
-                
-                GetNotices();
-            }
-            catch (Exception ex)
+                    cmd = new OleDbCommand(query, conn);
 
-            {
-                MessageBox.Show(ex.Message);
+
+
+                    cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_notice_no.Text));
+
+
+                    conn.Open();
+
+
+                    cmd.ExecuteNonQuery();
+
+
+                    conn.Close();
+
+
+                    MessageBox.Show("Notice Deleted!");
+
+
+                    GetNotices();
+                }
+                catch (Exception ex)
+
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
@@ -218,66 +221,75 @@ namespace IUTSMS_MAIN_
 
         private void dgw_members_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            txt_EID.Text = dgw_members.CurrentRow.Cells[0].Value.ToString();
+            try
+            {
+                txt_EID.Text = dgw_members.CurrentRow.Cells[0].Value.ToString();
 
-            txt_name.Text = dgw_members.CurrentRow.Cells[1].Value.ToString();
+                txt_name.Text = dgw_members.CurrentRow.Cells[1].Value.ToString();
 
-            txt_st_id.Text = dgw_members.CurrentRow.Cells[2].Value.ToString();
+                txt_st_id.Text = dgw_members.CurrentRow.Cells[2].Value.ToString();
 
-            txt_dept.Text = dgw_members.CurrentRow.Cells[3].Value.ToString();
+                txt_dept.Text = dgw_members.CurrentRow.Cells[3].Value.ToString();
+            }
+            catch 
+            {
+                txt_EID.Text = "No member here!";
+            }
         }
 
         private void btn_remove_member_Click(object sender, EventArgs e)
         {
-           
-            
-            try
+
+            if (txt_EID.Text != "No member here!")
             {
+                try
+                {
 
 
 
-                string query = "DELETE FROM ps_table where EID= @eid ";
+                    string query = "DELETE FROM ps_table where EID= @eid ";
 
 
 
-                cmd = new OleDbCommand(query, conn);
+                    cmd = new OleDbCommand(query, conn);
 
 
-                cmd.Parameters.AddWithValue("@eid", Convert.ToInt32(txt_EID.Text));
-
-
-
-                conn.Open();
-
-
-                cmd.ExecuteNonQuery();
-
-
-                conn.Close();
-
-
-                MessageBox.Show("Member Removed!");
-
-
-                IUTPS iutps = new IUTPS();
-
-
-                iutps.fill_arr();
+                    cmd.Parameters.AddWithValue("@eid", Convert.ToInt32(txt_EID.Text));
 
 
 
-                fillmember();
+                    conn.Open();
+
+
+                    cmd.ExecuteNonQuery();
+
+
+                    conn.Close();
+
+
+                    MessageBox.Show("Member Removed!");
+
+
+                    IUTPS iutps = new IUTPS();
+
+
+                    iutps.fill_arr();
 
 
 
-            }
-            catch (Exception ex)
-            {
+                    fillmember();
 
 
-                MessageBox.Show(ex.Message);
-            
-            
+
+                }
+                catch (Exception ex)
+                {
+
+
+                    MessageBox.Show(ex.Message);
+
+
+                }
             }
         }
 

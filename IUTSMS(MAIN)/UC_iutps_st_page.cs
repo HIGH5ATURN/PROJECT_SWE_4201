@@ -251,7 +251,7 @@ namespace IUTSMS_MAIN_
                 conn.Open();
 
                 string g = "-1";
-                string t = "UPDATE ps_table set " + f + "=" + g + "";
+                string t = "UPDATE ps_table set " + f + "=" + g + " where st_id="+st_login_Form.id+"";
 
                 cmd = new OleDbCommand(t, conn);
 

@@ -162,41 +162,44 @@ namespace IUTSMS_MAIN_
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            try
+            if (txt_notice_no.Text != "NO NOTICE")
             {
-               
-                
-                string query = "DELETE FROM siks_notice where EID=@id";
+                try
+                {
+
+
+                    string query = "DELETE FROM siks_notice where EID=@id";
 
 
 
-                
-                
-                cmd = new OleDbCommand(query, conn);
-                
-                
-                cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_notice_no.Text));
-                
-                
-                conn.Open();
-                
-                
-                cmd.ExecuteNonQuery();
-                
-                
-                conn.Close();
-                
-                
-                MessageBox.Show("Notice Deleted!");
-                
-                
-                GetNotices();
-            }
-            catch(Exception ex)
-            {
-               
-                MessageBox.Show(ex.Message);
-            
+
+
+                    cmd = new OleDbCommand(query, conn);
+
+
+                    cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_notice_no.Text));
+
+
+                    conn.Open();
+
+
+                    cmd.ExecuteNonQuery();
+
+
+                    conn.Close();
+
+
+                    MessageBox.Show("Notice Deleted!");
+
+
+                    GetNotices();
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+
+                }
             }
         }
 
@@ -212,75 +215,83 @@ namespace IUTSMS_MAIN_
         private void dgw_members_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
 
-
-            txt_EID.Text = dgw_members.CurrentRow.Cells[0].Value.ToString();
-
-
-
-
-            txt_name.Text = dgw_members.CurrentRow.Cells[1].Value.ToString();
+            try
+            {
+                txt_EID.Text = dgw_members.CurrentRow.Cells[0].Value.ToString();
 
 
 
-            txt_st_id.Text = dgw_members.CurrentRow.Cells[2].Value.ToString();
 
-            
-            
-            
-            txt_dept.Text = dgw_members.CurrentRow.Cells[3].Value.ToString();
+                txt_name.Text = dgw_members.CurrentRow.Cells[1].Value.ToString();
+
+
+
+                txt_st_id.Text = dgw_members.CurrentRow.Cells[2].Value.ToString();
+
+
+
+
+                txt_dept.Text = dgw_members.CurrentRow.Cells[3].Value.ToString();
+            }
+            catch
+            {
+                txt_EID.Text = "No member here";
+            }
         
         
         }
 
         private void btn_remove_member_Click(object sender, EventArgs e)
         {
-        
-            
-            try
+
+            if (txt_EID.Text != "No member here")
             {
+                try
+                {
 
 
-                string query = "DELETE FROM siks_table where EID= @eid ";
-
-
-
-                cmd = new OleDbCommand(query, conn);
-
-
-                cmd.Parameters.AddWithValue("@eid", Convert.ToInt32(txt_EID.Text));
+                    string query = "DELETE FROM siks_table where EID= @eid ";
 
 
 
-                conn.Open();
+                    cmd = new OleDbCommand(query, conn);
 
 
-                cmd.ExecuteNonQuery();
-
-
-                conn.Close();
-
-
-                MessageBox.Show("Member Removed!");
-
-
-                IUTSIKS iutsiks = new IUTSIKS();
-
-
-                iutsiks.fill_arr();
+                    cmd.Parameters.AddWithValue("@eid", Convert.ToInt32(txt_EID.Text));
 
 
 
-                fillmember();
+                    conn.Open();
 
 
-            }
-            catch (Exception ex)
-            {
+                    cmd.ExecuteNonQuery();
 
 
-                MessageBox.Show(ex.Message);
-            
-            
+                    conn.Close();
+
+
+                    MessageBox.Show("Member Removed!");
+
+
+                    IUTSIKS iutsiks = new IUTSIKS();
+
+
+                    iutsiks.fill_arr();
+
+
+
+                    fillmember();
+
+
+                }
+                catch (Exception ex)
+                {
+
+
+                    MessageBox.Show(ex.Message);
+
+
+                }
             }
         }
 
